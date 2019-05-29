@@ -180,4 +180,22 @@ router.use((req, res, next) => {
     }
   });
 
+  // Death date and verification
+  router.post('/iteration5/death-date', function(req, res) {
+    if ( req.body['verified-or-notverified'] === 'verified' ) {
+      res.redirect('payee-letter');
+    } else {
+      res.redirect('overview-dead-notverified');
+    }
+  });
+
+  // Death return to verify
+  router.post('/iteration5/death-verification', function(req, res) {
+    if ( req.body['verified-or-notverified'] === 'verified' ) {
+      res.redirect('payee-letter');
+    } else {
+      res.redirect('overview-dead-notverified');
+    }
+  });
+
   module.exports = router;

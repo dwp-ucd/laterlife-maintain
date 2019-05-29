@@ -30,9 +30,9 @@ GOV.UK Prototype Kit
           <div class="grid-row">
             <div class="column-full">
 
-{% include './_bar-paymentreturned.html' %}
+{% include './_bar-dead.html' %}
 
-{% include './_tab-overview-paymentreturned.html' %}
+{% include './_tab-overview-dead.html' %}
 
 
 
@@ -41,15 +41,25 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-        </br>
-        </br>
+        <br>
+        <br>
 
         <div>
           <h2 class="govuk-heading-m">Personal details</h2>
+
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              Date of death awaiting verification
+            </strong>
+          </div>
+
           <dl class="app-check-your-answers app-check-your-answers--short">
             <div class="app-check-your-answers__contents">
               <dd class="app-check-your-answers__answer">
-
+              </dd>
+              <dd class="app-check-your-answers__answer">
               </dd>
               <dd class="app-check-your-answers__change">
                 <a href="#">
@@ -99,6 +109,9 @@ GOV.UK Prototype Kit
                   {{data['dead-day']}} {{data['dead-month'] | formatMonth}} {{data['dead-year']}}
                 </dd>
                 <dd class="app-check-your-answers__change">
+                  <a href="death-verification">
+                    Verify<span class="govuk-visually-hidden">Death status</span>
+                  </a>
                 </dd>
               </div>
             {% endif %}
