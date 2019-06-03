@@ -207,5 +207,19 @@ router.use((req, res, next) => {
   })
   ;
 
+  // Verifying a death
+  router.post('/iteration5/death-verification', function(req, res) {
+    if ( req.body['deathdate'] === 'yes' ) {
+      res.redirect('overview-dead-moneyowed');
+    } else {
+      res.redirect('new-deathdate');
+    }
+  });
+
+  router.post('/iteration5/new-deathdate', (req, res) => {
+    res.redirect('/iteration5/overview-dead-moneyowed')
+  })
+  ;
+
 
   module.exports = router;

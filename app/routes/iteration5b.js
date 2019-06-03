@@ -8,8 +8,8 @@ router.use((req, res, next) => {
     next()
   })
 
-  router.post('/iteration5/frequency', (req, res) => {
-    res.redirect('/iteration5/payment')
+  router.post('/iteration5b/frequency', (req, res) => {
+    res.redirect('/iteration5b/payment')
   })
   ;
 
@@ -20,8 +20,8 @@ router.use((req, res, next) => {
     next()
   })
 
-  router.post('/iteration5/bankdetails', (req, res) => {
-    res.redirect('/iteration5/reissue-payment')
+  router.post('/iteration5b/bankdetails', (req, res) => {
+    res.redirect('/iteration5b/reissue-payment')
   })
   ;
 
@@ -32,8 +32,8 @@ router.use((req, res, next) => {
     next()
   })
 
-  router.post('/iteration5/workphone', (req, res) => {
-    res.redirect('/iteration5/overview')
+  router.post('/iteration5b/workphone', (req, res) => {
+    res.redirect('/iteration5b/overview')
   })
   ;
 
@@ -44,8 +44,8 @@ router.use((req, res, next) => {
     next()
   })
 
-  router.post('/iteration5/mobilephone', (req, res) => {
-    res.redirect('/iteration5/overview')
+  router.post('/iteration5b/mobilephone', (req, res) => {
+    res.redirect('/iteration5b/overview')
   })
   ;
 
@@ -56,8 +56,8 @@ router.use((req, res, next) => {
     next()
   })
 
-  router.post('/iteration5/email', (req, res) => {
-    res.redirect('/iteration5/overview')
+  router.post('/iteration5b/email', (req, res) => {
+    res.redirect('/iteration5b/overview')
   })
   ;
 
@@ -68,8 +68,8 @@ router.use((req, res, next) => {
     next()
   })
 
-  router.post('/iteration5/homephone', (req, res) => {
-    res.redirect('/iteration5/overview')
+  router.post('/iteration5b/homephone', (req, res) => {
+    res.redirect('/iteration5b/overview')
   })
   ;
 
@@ -80,8 +80,8 @@ router.use((req, res, next) => {
     next()
   })
 
-  router.post('/iteration5/find', (req, res) => {
-    res.redirect('/iteration5/find-1')
+  router.post('/iteration5b/find', (req, res) => {
+    res.redirect('/iteration5b/find-1')
   })
   ;
 
@@ -92,18 +92,18 @@ router.use((req, res, next) => {
     next()
   })
 
-  router.post('/iteration5/address', (req, res) => {
-    res.redirect('/iteration5/address-1')
+  router.post('/iteration5b/address', (req, res) => {
+    res.redirect('/iteration5b/address-1')
   })
   ;
 
-  router.post('/iteration5/address-1', (req, res) => {
-    res.redirect('/iteration5/homephone-address')
+  router.post('/iteration5b/address-1', (req, res) => {
+    res.redirect('/iteration5b/homephone-address')
   })
   ;
 
   // Change of address and home phone number
-  router.post('/iteration5/homephone-address', function(req, res) {
+  router.post('/iteration5b/homephone-address', function(req, res) {
     if ( req.body['homephone-address'] === 'Yes' ) {
       res.redirect('homephone');
     } else {
@@ -112,7 +112,7 @@ router.use((req, res, next) => {
   });
 
   // Home phone number removal
-  router.post('/iteration5/homephone-remove', function(req, res) {
+  router.post('/iteration5b/homephone-remove', function(req, res) {
     if ( req.body['homephone-remove'] === 'Yes' ) {
       res.redirect('overview');
     } else {
@@ -122,7 +122,7 @@ router.use((req, res, next) => {
 
 
   // Mobile phone number removal
-  router.post('/iteration5/mobilephone-remove', function(req, res) {
+  router.post('/iteration5b/mobilephone-remove', function(req, res) {
     if ( req.body['mobilephone-remove'] === 'yes' ) {
       res.redirect('overview');
     } else {
@@ -131,7 +131,7 @@ router.use((req, res, next) => {
   });
 
   // Work phone number removal & change
-  router.post('/iteration5/workphone-remove', function(req, res) {
+  router.post('/iteration5b/workphone-remove', function(req, res) {
     if ( req.body['workphone-remove'] === 'Yes' ) {
       res.redirect('overview');
     } else {
@@ -139,13 +139,13 @@ router.use((req, res, next) => {
     }
   });
 
-  router.post('/iteration5/workphone', (req, res) => {
-    res.redirect('/iteration5/overview')
+  router.post('/iteration5b/workphone', (req, res) => {
+    res.redirect('/iteration5b/overview')
   })
   ;
 
   // Email removal
-  router.post('/iteration5/email-remove', function(req, res) {
+  router.post('/iteration5b/email-remove', function(req, res) {
     if ( req.body['email-remove'] === 'yes' ) {
       res.redirect('overview');
     } else {
@@ -154,25 +154,25 @@ router.use((req, res, next) => {
   });
 
   // Marital status change
-  router.post('/iteration5/marital-status', (req, res) => {
-    res.redirect('/iteration5/marriage-details')
+  router.post('/iteration5b/marital-status', (req, res) => {
+    res.redirect('/iteration5b/marriage-details')
   })
   ;
 
-  router.post('/iteration5/marriage-details', (req, res) => {
-    res.redirect('/iteration5/marriage-certificate')
+  router.post('/iteration5b/marriage-details', (req, res) => {
+    res.redirect('/iteration5b/marriage-certificate')
   })
   ;
 
   // Contact preferences
-  router.post('/iteration5/contact-preferences', (req, res) => {
-    res.redirect('/iteration5/contact')
+  router.post('/iteration5b/contact-preferences', (req, res) => {
+    res.redirect('/iteration5b/contact')
   })
   ;
 
 
   // Stopping payments
-  router.post('/iteration5/prevent-payments', function(req, res) {
+  router.post('/iteration5b/prevent-payments', function(req, res) {
     if ( req.body['stopped-reason'] === 'dead' ) {
       res.redirect('death-date');
     } else {
@@ -181,7 +181,7 @@ router.use((req, res, next) => {
   });
 
   // Death date and verification
-  router.post('/iteration5/death-date', function(req, res) {
+  router.post('/iteration5b/death-date', function(req, res) {
     if ( req.body['verified-or-notverified'] === 'verified' ) {
       res.redirect('payee');
     } else {
@@ -190,7 +190,7 @@ router.use((req, res, next) => {
   });
 
   // Do we have death arrears payee details?
-  router.post('/iteration5/payee', function(req, res) {
+  router.post('/iteration5b/payee', function(req, res) {
     if ( req.body['payee-details'] === 'yes' ) {
       res.redirect('payee-letter');
     } else {
@@ -200,7 +200,7 @@ router.use((req, res, next) => {
 
 
   // Death return to verify
-  router.post('/iteration5/death-verification', function(req, res) {
+  router.post('/iteration5b/death-verification', function(req, res) {
     if ( req.body['deathdate'] === 'yes' ) {
       res.redirect('overview-dead-moneyowed');
     } else {
@@ -208,8 +208,8 @@ router.use((req, res, next) => {
     }
   });
 
-  router.post('/iteration5/payee-letter', (req, res) => {
-    res.redirect('/iteration5/payee-address')
+  router.post('/iteration5b/payee-letter', (req, res) => {
+    res.redirect('/iteration5b/payee-address')
   })
   ;
 
