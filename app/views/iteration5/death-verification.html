@@ -46,7 +46,9 @@ GOV.UK Prototype Kit
       <form method="post">
 
 
-<h2 class="govuk-heading-l">Is date of death {{data['dead-day']}} {{data['dead-month'] | formatMonth}} {{data['dead-year']}}?</h2>
+<h2 class="govuk-heading-l">Is date of death correct?</h2>
+
+<p>{{data['dead-day']}} {{data['dead-month'] | formatMonth}} {{data['dead-year']}}</p>
 
           <fieldset class="govuk-fieldset" aria-describedby="deathdate-hint">
             <div class="govuk-radios govuk-radios--inline">
@@ -66,7 +68,7 @@ GOV.UK Prototype Kit
 <br>
 
         <button type="submit" class="govuk-button">
-          Verify
+          Continue
         </button>
       </form>
 
