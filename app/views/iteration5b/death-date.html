@@ -29,9 +29,9 @@ GOV.UK Prototype Kit
         <div class="grid-row">
           <div class="column-full">
 
-            {% include './_bar-dead.html' %}
+            {% include './_bar.html' %}
 
-            {% include './_tab-overview-dead.html' %}
+            {% include './_tab-payment.html' %}
 
           </div>
         </div>
@@ -40,21 +40,44 @@ GOV.UK Prototype Kit
       <br>
 
       <div>
-        <a href="death-date" class="govuk-back-link">Back</a>
+        <a href="prevent-payments" class="govuk-back-link">Back</a>
       </div>
 
       <form method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            </legend>
+            <h1 class="govuk-heading-l">Enter date of death</h1>
+            <div class="govuk-date-input" id="passport-issued">
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                    Day
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="dead-day" type="number" pattern="[0-9]*">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                    Month
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="dead-month" type="number" pattern="[0-9]*">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                    Year
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="dead-year" type="number" pattern="[0-9]*">
+                </div>
+              </div>
+            </div>
 
-          <div class="govuk-form-group">
-<br>
-            <h2 class="govuk-heading-l">Payee info</h2>
-
-            <label class="govuk-label" for="full-name">
-              Full name
-            </label>
-            <input class="govuk-input" id="full-name" name="full-name" type="text" autocomplete="name" spellcheck="false">
-          </div>
-
+          </fieldset>
+        </div>
 
           <fieldset class="govuk-fieldset" aria-describedby="verified-or-notverified-hint">
             <div class="govuk-radios govuk-radios--inline">

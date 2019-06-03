@@ -40,33 +40,33 @@ GOV.UK Prototype Kit
       <br>
 
       <div>
-        <a href="prevent-payments" class="govuk-back-link">Back</a>
+        <a href="payee-letter" class="govuk-back-link">Back</a>
       </div>
 
       <form method="post">
 
+        <div class="govuk-form-group">
+          <br>
+          <h2 class="govuk-heading-l">Payee contact</h2>
 
-<h2 class="govuk-heading-l">Is date of death {{data['dead-day']}} {{data['dead-month'] | formatMonth}} {{data['dead-year']}}?</h2>
+          <label class="govuk-label" for="full-name">
+            Full name
+          </label>
+          <input class="govuk-input" id="full-name" name="full-name" type="text" autocomplete="name" spellcheck="false">
+        </div>
 
-          <fieldset class="govuk-fieldset" aria-describedby="deathdate-hint">
-            <div class="govuk-radios govuk-radios--inline">
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="deathdate-1" name="deathdate" type="radio" value="yes">
-                <label class="govuk-label govuk-radios__label" for="deathdate-1">
-                  Yes
-                </label> </div>
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="deathdate-2" name="deathdate" type="radio" value="no">
-                <label class="govuk-label govuk-radios__label" for="deathdate-2">
-                  No
-                </label> </div>
-            </div>
-          </fieldset>
 
-<br>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="telephone-number">
+            UK telephone number
+          </label>
+          <input class="govuk-input govuk-input--width-20" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+        </div>
+
+        <br>
 
         <button type="submit" class="govuk-button">
-          Verify
+          Continue
         </button>
       </form>
 

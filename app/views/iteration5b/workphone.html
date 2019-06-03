@@ -37,36 +37,29 @@ GOV.UK Prototype Kit
           </div>
         </main>
 
-        <br>
+        </br>
 
         <div>
-          <a href="contact" class="govuk-back-link">Back</a>
+          <a href="overview" class="govuk-back-link">Back</a>
         </div>
 
-        <br>
+</br>
 
-        <h1 class="govuk-heading-l">Update contact preferences</h1>
+        <h1 class="govuk-heading-l">Change work phone number</h1>
+
         <form method="post">
           <div class="govuk-form-group">
+            <label class="govuk-label" for="telephone-number">
+              Enter new work phone number
 
-            <p>Select new contact preferences</p>
-
-            <div class="govuk-checkboxes">
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="contact-1" name="contactpreference" type="checkbox" value="Large print">
-                <label class="govuk-label govuk-checkboxes__label" for="contact-1">
-                  Large print
-                </label>
-              </div>
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="contact-2" name="contactpreference" type="checkbox" value="Braille">
-                <label class="govuk-label govuk-checkboxes__label" for="contact-2">
-                  Braille
-                </label>
-              </div>
-            </div>
-
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="worknumber" name="worknumber" type="tel">
           </div>
+
+          <div>
+          <a href="workphone-remove" class="govuk-link govuk-!-font-size-19">Remove work phone number</a>
+        </div>
+          </br>
 
           <button type="submit" class="govuk-button">
             Save
