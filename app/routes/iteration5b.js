@@ -180,14 +180,6 @@ router.use((req, res, next) => {
     }
   });
 
-  // Death date and verification
-  router.post('/iteration5b/death-date', function(req, res) {
-    if ( req.body['verified-or-notverified'] === 'verified' ) {
-      res.redirect('payee');
-    } else {
-      res.redirect('overview-dead-notverified');
-    }
-  });
 
   // Do we have death arrears payee details?
   router.post('/iteration5b/payee', function(req, res) {
@@ -199,7 +191,35 @@ router.use((req, res, next) => {
   });
 
 
-  // Death return to verify
+  // Death date and contact information
+
+
+    router.post('/iteration5b/death-date', (req, res) => {
+      res.redirect('/iteration5b/death-contact-address')
+    })
+
+  router.post('/iteration5b/death-contact-address', (req, res) => {
+    res.redirect('/iteration5b/arrears')
+  })
+  ;
+  ;
+
+  router.post('/iteration5b/arrears', (req, res) => {
+    res.redirect('/iteration5b/overview-dead-moneyowed')
+  })
+  ;
+
+  router.post('/iteration5b/dap', (req, res) => {
+    res.redirect('/iteration5b/overview-dead')
+  })
+  ;
+
+  router.post('/iteration5b/dap-payment', (req, res) => {
+    res.redirect('/iteration5b/overview-dead')
+  })
+  ;
+
+  // Verifying a death
   router.post('/iteration5b/death-verification', function(req, res) {
     if ( req.body['deathdate'] === 'yes' ) {
       res.redirect('overview-dead-moneyowed');
@@ -208,11 +228,10 @@ router.use((req, res, next) => {
     }
   });
 
-  router.post('/iteration5b/payee-letter', (req, res) => {
-    res.redirect('/iteration5b/payee-address')
+  router.post('/iteration5b/new-deathdate', (req, res) => {
+    res.redirect('/iteration5b/overview-dead-moneyowed')
   })
   ;
-
 
 
   module.exports = router;

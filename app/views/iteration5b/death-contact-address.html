@@ -50,11 +50,20 @@ GOV.UK Prototype Kit
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Payee address
+              Details of person reporting the death
             </h1>
           </legend>
 
           <br>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="full-name">
+              Full name
+            </label>
+            <input class="govuk-input" id="full-name" name="full-name" type="text" autocomplete="name" spellcheck="false">
+          </div>
+
+<h2 class="govuk-heading-s">Address</h2>
 
           <div class="govuk-form-group">
             <label class="govuk-label" for="address-line-1">
@@ -93,10 +102,10 @@ GOV.UK Prototype Kit
 
           <br>
 
-          <h2 class="govuk-heading-l">
+          <h3 class="govuk-heading-s">
             Contact preferences
-          </h2>
-          
+          </h3>
+
 
           <div class="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
