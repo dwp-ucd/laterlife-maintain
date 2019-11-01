@@ -54,49 +54,46 @@ GOV.UK Prototype Kit
         </div>
       </main>
 
-  <a href="award" class="govuk-back-link">Back</a>
+  <div>
+      <a href="payment" class="govuk-back-link">Back</a>
+    </div>
+    <br>
+    <form method="post" action="payment-notpaid">
+  <h2 class="govuk-heading-l">Has this payment been returned by the bank?</h2>
+  <!---<span id="passport-issued-hint" class="govuk-hint">
+      Payments should only be changed to 'not paid' if they have been returned by the bank.
+    </span> -->
+  <dl class="app-check-your-answers app-check-your-answers--short">
 
- <br><br>
-      
-        <h2 class="govuk-heading-m">New State Pension award</h2>
+      <div class="govuk-form-group">
+          
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  No
+                </label>
+              </div>
+            </div>
+        </div>
+     
+        <button class="govuk-button" data-module="govuk-button">
+            Confirm
+          </button>
 
-      
-             
-
-
-                    <table class="govuk-table">
-                      <tbody class="govuk-table__body">
-                       
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Weekly rate</th>
-                          <td class="govuk-table__cell">£167.68</td>
-                          <td class="govuk-table__cell"><a href="current-breakdown.html"></a></td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                            <th scope="row" class="govuk-table__header">4 weekly amount</th>
-                            <td class="govuk-table__cell">£670.72</td>
-                            <td class="govuk-table__cell"></td>
-                          </tr>
-                          <tr class="govuk-table__row">
-                            <th scope="row" class="govuk-table__header" style="width: 43%">Applicable from</th>
-                            <td class="govuk-table__cell" style="width: 48%">Friday 7 April 2020</td>
-                            <td class="govuk-table__cell"></td>
-                          </tr>
-                      </tbody>
-                    </table>
-
-        
-                 
-    
-  
-
+        </form>
+</div>
 
 
 
 
   </div>
-
-  
 
 
 </main>        </div>
