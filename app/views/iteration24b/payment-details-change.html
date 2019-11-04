@@ -41,7 +41,7 @@ GOV.UK Prototype Kit
 
                 <div>
                   <h1 class="govuk-heading-xl">
-                    Roberto Hugh Smith<br>
+                    Rachel Smith<br>
                     <span class="govuk-caption-xl">QQ 12 34 99 C</span>
                     <span class="app-c-tag">Receiving State Pension</span>
                   </h1>
@@ -54,57 +54,46 @@ GOV.UK Prototype Kit
         </div>
       </main>
 
-  <a href="award" class="govuk-back-link">Back</a>
+  <div>
+      <a href="payment" class="govuk-back-link">Back</a>
+    </div>
+    <br>
+    <form method="post" action="payment-notpaid">
+  <h2 class="govuk-heading-l">Has this payment been returned by the bank?</h2>
+  <!---<span id="passport-issued-hint" class="govuk-hint">
+      Payments should only be changed to 'not paid' if they have been returned by the bank.
+    </span> -->
+  <dl class="app-check-your-answers app-check-your-answers--short">
 
- <br><br>
-      
- <h2 class="govuk-heading-m">Current State Pension award</h2>
- 
- <table class="govuk-table">
-     <thead class="govuk-table__head">
-       <tr class="govuk-table__row">
-         <th class="govuk-table__header" scope="col">Total</th>
-         <th class="govuk-table__header" scope="col">£162.68 per week	</th>
-       </tr>
+      <div class="govuk-form-group">
+          
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  No
+                </label>
+              </div>
+            </div>
+        </div>
+     
+        <button class="govuk-button" data-module="govuk-button">
+            Confirm
+          </button>
 
-
-     </thead>
-     <tbody class="govuk-table__body">
-       <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row">New State Pension</td>
-         <td class="govuk-table__cell">£152.66</td>
-       </tr>
-       <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row">Protected payment</td>
-         <td class="govuk-table__cell">£10.02</td>
-       </tr>
-       <tr class="govuk-table__row">
-           <td class="govuk-table__cell" scope="row">Extra State Pension</td>
-           <td class="govuk-table__cell">£0.00</td>
-         </tr>
-         <tr class="govuk-table__row">
-             <td class="govuk-table__cell" scope="row">Inherited extra State Pension</td>
-             <td class="govuk-table__cell">£0.00</td>
-           </tr>
-     </tbody>
-   </table>
-
-
-
-
-
-        
-                 
-    
-  
-
+        </form>
+</div>
 
 
 
 
   </div>
-
-  
 
 
 </main>        </div>
