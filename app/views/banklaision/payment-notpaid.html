@@ -24,21 +24,23 @@ serviceUrl: "/"
 
   <main class="govuk-main-wrapper">
 
-      
+    
 
     <div class="govuk-grid-column-two-thirds">
-      <div class="moj-banner moj-banner--success">
 
-        <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
-        <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
-        
-        <div class="moj-banner__message">
-        <span class="moj-banner__assistive">Success</span>Payment returned by the bank - payments stopped</div>
-        
-        </div> 
       <main id="content" role="main">
         <div class="grid-row">
           <div class="column-full">
+
+              <div class="moj-banner moj-banner--success">
+
+                  <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+                  <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
+                  
+                  <div class="moj-banner__message">
+                      <span class="moj-banner__assistive">Success</span>Payment marked as returned</div>
+                      
+                      </div> 
 
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-full">
@@ -54,16 +56,7 @@ serviceUrl: "/"
 
               </div>
             </div>
-            <div class="govuk-warning-text">
-                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                <strong class="govuk-warning-text__text">
-                  <span class="govuk-warning-text__assistive">Warning</span>
-                  A payment has been returned <br>
-                  <a href="payment-details-notp.html">
-                      Reissue payment<span class="govuk-visually-hidden">Resend payment</span>
-                  </a>
-                </strong>
-              </div>
+         
             {% include './_tab-payment.html' %}
 
           </div>
@@ -114,18 +107,15 @@ serviceUrl: "/"
                   <span class="govuk-link govuk-!-font-size-19" style="margin-left: 30%">Change</span>
                 </a></td>
             </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Last regular payment</th>
-              <td class="govuk-table__cell">Friday 28 June 2019</td>
-              <td class="govuk-table__cell">£650.72</td>
-            </tr>
+            
   
           </tbody>
         </table>
 
     </div>
-<BR><BR><BR><BR>
+
     <div class="govuk-grid-column-one-third">
+        <br><br><br><br>
         <h2 class="govuk-heading-m">
           Payment changes
         </h2>
@@ -167,7 +157,7 @@ serviceUrl: "/"
             <td class="govuk-table__cell">26/07/2019</td>
             <td class="govuk-table__cell">26/07/2019</td>
             <td class="govuk-table__cell">£650.72</td>
-            <td class="govuk-table__cell" class="govuk-orange">Not paid</class>
+            <td class="govuk-table__cell" class="govuk-orange">Returned</class>
             </td>
             <td class="govuk-table__cell"><a href="payment-details-notp.html">Details</a></td>
           </tr>
