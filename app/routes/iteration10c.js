@@ -26,6 +26,8 @@ router.use((req, res, next) => {
     }
   });
 
+
+
   router.post('iteration10c/dap-address-2', (req, res) => {
     res.redirect('iteration10c/dap-address-3')
   })
@@ -63,5 +65,40 @@ router.use((req, res, next) => {
     res.redirect('bpv-death-3/sarah-bank')
   })
   ;
+
+
+  //// Iteration 26c
+
+  router.post('/iteration26c/330-name', (req, res) => {
+    res.redirect('/iteration26c/330-number')
+  })
+  ;
+
+
+  router.post('/iteration26c/330-number', function(req, res) {
+    if ( req.body['number'] === 'yes' ) {
+      res.redirect('330-address1');
+    } else {
+      res.redirect('330-number');
+    }
+  });
+
+  router.post('/iteration26c/330-number', function(req, res) {
+    if ( req.body['number'] === 'yes' ) {
+      res.redirect('330-address1');
+    } else {
+      res.redirect('330-number1');
+    }
+  });
+
+
+  router.post('/iteration26c/330-address1', function(req, res) {
+    if ( req.body['number'] === 'yes' ) {
+      res.redirect('330-address1');
+    } else {
+      res.redirect('330-address2');
+    }
+  });
+
 
   module.exports = router;
