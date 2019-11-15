@@ -69,21 +69,17 @@ router.use((req, res, next) => {
 
   //// Iteration 26c
 
-  router.post('/iteration26c/330-name', (req, res) => {
-    res.redirect('/iteration26c/330-number')
-  })
-  ;
+ 
 
-
-  router.post('/iteration26c/330-number', function(req, res) {
-    if ( req.body['number'] === 'yes' ) {
+  router.post('iteration26c/330-address1', function(req, res) {
+    if ( req.body['address'] === 'yes' ) {
       res.redirect('330-address1');
     } else {
-      res.redirect('330-number');
+      res.redirect('330-address2');
     }
   });
 
-  router.post('/iteration26c/330-number', function(req, res) {
+  router.post('iteration26c/330-number', function(req, res) {
     if ( req.body['number'] === 'yes' ) {
       res.redirect('330-address1');
     } else {
@@ -91,14 +87,6 @@ router.use((req, res, next) => {
     }
   });
 
-
-  router.post('/iteration26c/330-address1', function(req, res) {
-    if ( req.body['number'] === 'yes' ) {
-      res.redirect('330-address1');
-    } else {
-      res.redirect('330-address2');
-    }
-  });
 
 
   module.exports = router;
