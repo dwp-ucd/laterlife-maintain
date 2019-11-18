@@ -69,23 +69,9 @@ router.use((req, res, next) => {
 
   //// Iteration 26c
 
- 
 
-  router.post('iteration26c/330-address1', function(req, res) {
-    if ( req.body['address'] === 'yes' ) {
-      res.redirect('330-address1');
-    } else {
-      res.redirect('330-address2');
-    }
-  });
 
-  router.post('iteration26c/330-number', function(req, res) {
-    if ( req.body['number'] === 'yes' ) {
-      res.redirect('330-address1');
-    } else {
-      res.redirect('330-number1');
-    }
-  });
+
 
 
 

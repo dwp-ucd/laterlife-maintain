@@ -40,36 +40,21 @@
           <a href="dap-name" class="govuk-back-link">Back</a>
         </div>
         <br>
-        <form method="post" class="form" action="330-address3">
-          <h1 class="govuk-heading-l">Enter the payee's address - postcode</h1>
-<div class="govuk-inset-text">
-  2 Windsor Street
-  <br>South Gosforth
-  <br>Newcastle Upon Tyne
-  <br>NE3 1YL
-</div>
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-              <div class="govuk-radios govuk-radios--inline">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="address-yes" name="address" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="address-yes">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="address-no" name="address" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="address-no">
-                    No
-                  </label>
-                </div>
-              </div>
+        <h1 class="govuk-heading-l">Enter payee address</h1>
 
-              <br>
-              <button type="submit" class="govuk-button">
-                Continue
-              </button>
-            </form>
+        <form action="330-address3" method="post">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="postcode">
+              Enter postcode
+            </label>
+            <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
+          </div>
+
+          <button type="submit" class="govuk-button">
+            Find address
+          </button>
+        </form>
+
           </div>
         </fieldset>
       </div>
