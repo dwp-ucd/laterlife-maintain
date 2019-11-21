@@ -26,6 +26,7 @@ const bpvdeath3 = require('./routes/bpvdeath3');
 const whatislive = require('./routes/whatislive');
 const iteration22b = require('./routes/iteration22b');
 const iteration26c = require('./routes/iteration10c');
+const iteration28 = require('./routes/iteration28');
 
 
 
@@ -56,6 +57,7 @@ router.use(bpvdeath3);
 router.use(whatislive);
 router.use(iteration22b);
 router.use(iteration26c);
+router.use(iteration28);
 
 
 
