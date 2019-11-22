@@ -42,7 +42,7 @@ serviceUrl: "/"
         {% include './_bar-paymentstopped.html' %}
 
 
-        <a href="payment-details1" class="govuk-back-link">Back</a>
+        <a href="payment" class="govuk-back-link">Back</a>
         <br><br>
 
 
@@ -50,8 +50,8 @@ serviceUrl: "/"
 
 
         <div class="govuk-form-group">
-          <form method="post" class="form" action="payment-recalling">
-          <h2 class="govuk-heading-l">Are you trying to recall this payment?</h2>
+          <form method="post" action="payment-recalled" class="form">
+          <h2 class="govuk-heading-l">Was this payment successfully recalled?</h2>
           <fieldset class="govuk-fieldset" aria-describedby="recall-hint">
 
             <div class="govuk-radios govuk-radios--inline">
