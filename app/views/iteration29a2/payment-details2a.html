@@ -39,13 +39,8 @@ GOV.UK Prototype Kit
                 {% set status = 'Payment returned'%}
                 {% endif %}
 
-                <div>
-                  <h1 class="govuk-heading-xl">
-                    Rachel Smith<br>
-                    <span class="govuk-caption-xl">QQ 12 34 56 X</span>
-                    <span class="app-c-tag">Receiving State Pension</span>
-                  </h1>
-                </div>
+                {% include './_bar-paymentstopped.html' %}
+
 
               </div>
             </div>
@@ -55,7 +50,7 @@ GOV.UK Prototype Kit
       </main>
 
   <div>
-      <a href="payment-paid2" class="govuk-back-link">Back</a>
+      <a href="payment-returned2" class="govuk-back-link">Back</a>
     </div>
     <br>
   <h2 class="govuk-heading-m">Payment details</h2>
@@ -86,16 +81,16 @@ GOV.UK Prototype Kit
 
             <tr class="govuk-table__row">
                 <td class="govuk-table__cell" scope="row">Period</td>
-                <td class="govuk-table__cell">29 December 2019 to <br>26 January 2020</td>
+                <td class="govuk-table__cell">22 November 2019 to <br>28 December 2019</td>
                 <th class="govuk-table__header" scope="col"></th>
               </tr>
              
                 </tr>
                 <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Status</td>
-                    <td class="govuk-table__cell" style="width: 34%">Paid</td>
+                    <td class="govuk-table__cell" style="width: 34%">Returned</td>
                     <td class="govuk-table__cell">
-                     <a href="#">Mark as returned</a>
+                     <a href="reissue-2">Reissue payment</a>
                     </td>
                   </tr>
                  
@@ -134,7 +129,20 @@ GOV.UK Prototype Kit
   <h2 class="govuk-heading-m">
     Status changes
   </h2>
-  <ol class="app-timeline"> 
+  <ol class="app-timeline">  
+      <li class="app-timeline__entry">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+            Returned
+          </h3>
+  
+          <p class="app-timeline__info govuk-!-margin-bottom-0">
+            <span class="govuk-visually-hidden">
+            </span>
+            <span class="app-timeline__date">
+                29 December 2019
+            </span>
+          </p>
+        </li>
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
             Paid
@@ -144,24 +152,10 @@ GOV.UK Prototype Kit
             <span class="govuk-visually-hidden">
             </span>
             <span class="app-timeline__date">
-                25 January 2020
+                28 December 2019
             </span>
           </p>
         </li>
-      <li class="app-timeline__entry">
-          <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            Recalling
-          </h3>
-  
-          <p class="app-timeline__info govuk-!-margin-bottom-0">
-            <span class="govuk-visually-hidden">
-            </span>
-            <span class="app-timeline__date">
-                25 January 2020
-            </span>
-          </p>
-        </li>
-
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
             Sent
@@ -171,7 +165,7 @@ GOV.UK Prototype Kit
             <span class="govuk-visually-hidden">
             </span>
             <span class="app-timeline__date">
-                20 January 2020
+                15 November 2019
             </span>
           </p>
         </li>

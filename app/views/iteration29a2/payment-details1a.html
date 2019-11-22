@@ -39,13 +39,8 @@ GOV.UK Prototype Kit
                 {% set status = 'Payment returned'%}
                 {% endif %}
 
-                <div>
-                  <h1 class="govuk-heading-xl">
-                    Rachel Smith<br>
-                    <span class="govuk-caption-xl">QQ 12 34 56 X</span>
-                    <span class="app-c-tag">Receiving State Pension</span>
-                  </h1>
-                </div>
+                {% include './_bar.html' %}
+
 
               </div>
             </div>
@@ -55,7 +50,7 @@ GOV.UK Prototype Kit
       </main>
 
   <div>
-      <a href="payment-paid2" class="govuk-back-link">Back</a>
+      <a href="payment" class="govuk-back-link">Back</a>
     </div>
     <br>
   <h2 class="govuk-heading-m">Payment details</h2>
@@ -93,9 +88,9 @@ GOV.UK Prototype Kit
                 </tr>
                 <tr class="govuk-table__row">
                     <td class="govuk-table__cell" scope="row">Status</td>
-                    <td class="govuk-table__cell" style="width: 34%">Paid</td>
+                    <td class="govuk-table__cell" style="width: 34%">Recalled</td>
                     <td class="govuk-table__cell">
-                     <a href="#">Mark as returned</a>
+                     <a href="reissue-1">Reissue payment</a>
                     </td>
                   </tr>
                  
@@ -134,20 +129,22 @@ GOV.UK Prototype Kit
   <h2 class="govuk-heading-m">
     Status changes
   </h2>
-  <ol class="app-timeline"> 
+  <ol class="app-timeline">  
+
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            Paid
+            Recalled
           </h3>
   
           <p class="app-timeline__info govuk-!-margin-bottom-0">
             <span class="govuk-visually-hidden">
             </span>
             <span class="app-timeline__date">
-                25 January 2020
+                28 December 2019
             </span>
           </p>
         </li>
+
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
             Recalling
@@ -157,11 +154,10 @@ GOV.UK Prototype Kit
             <span class="govuk-visually-hidden">
             </span>
             <span class="app-timeline__date">
-                25 January 2020
+                28 December 2019
             </span>
           </p>
         </li>
-
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
             Sent
@@ -171,7 +167,7 @@ GOV.UK Prototype Kit
             <span class="govuk-visually-hidden">
             </span>
             <span class="app-timeline__date">
-                20 January 2020
+                22 December 2019
             </span>
           </p>
         </li>
