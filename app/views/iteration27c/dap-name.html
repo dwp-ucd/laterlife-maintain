@@ -38,23 +38,20 @@
         
 
         <div>
-          <a href="dap-name" class="govuk-back-link">Back</a>
+          <a href="death-date" class="govuk-back-link">Back</a>
         </div>
-
         <br>
-
-        <h1 class="govuk-heading-l">Address of the person dealing with Rachel's estate</h1>
-
-        <form action="dap-address-1" method="post">
+        <form action="dap-number" method="post" class="form">
+          <h1 class="govuk-heading-l">Name of the person dealing with Rachel's estate</h1>
           <div class="govuk-form-group">
-            <label class="govuk-label" for="postcode">
-              UK postcode
+            <label class="govuk-label" for="event-name">
+              Full name
             </label>
-            <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
 
           <button type="submit" class="govuk-button">
-            Find address
+            Continue
           </button>
         </form>
 

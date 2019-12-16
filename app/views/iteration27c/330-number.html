@@ -28,41 +28,41 @@
           <div class="grid-row">
             <div class="column-full">
 
-              {% include './_rachel-smith.html' %}
-
+              {% include './_bar-dead.html' %}
 
             </div>
           </div>
         </main>
 
-        
+       
 
         <div>
           <a href="dap-name" class="govuk-back-link">Back</a>
         </div>
-
         <br>
+        <form method="post" class="form" action="330-address2">
+          <h1 class="govuk-heading-l">Payee phone number</h1>
+          <label class="govuk-label" for="telephone-number">
+            Phone number
+          </label>
+         
+          <input class="govuk-input govuk-input--width-30" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+         
 
-        <h1 class="govuk-heading-l">Address of the person dealing with Rachel's estate</h1>
+              <br><br><br>
+              <button type="submit" class="govuk-button">
+                Continue
+              </button>
 
-        <form action="dap-address-1" method="post">
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="postcode">
-              UK postcode
-            </label>
-            <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="postcode" aria-describedby="postcode-hint">
+            </form>
           </div>
-
-          <button type="submit" class="govuk-button">
-            Find address
-          </button>
-        </form>
-
+        </fieldset>
       </div>
-
     </div>
 
   </div>
+
+</div>
 
 </div>
 
