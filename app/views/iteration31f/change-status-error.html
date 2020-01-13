@@ -60,25 +60,46 @@ GOV.UK Prototype Kit
       
         <h2 class="govuk-heading-l">Change marital status</h2>
         
-     
-        <form method="post">
+        <h3 class="govuk-heading-m" style="color: red">ERROR</h3>
+
+        <form method="post" action="marriage-details">
             <div class="govuk-form-group">
   
               <p>Select new marital status</p>
   
                 <div class="govuk-radios">
-                 
-                 
-                 
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="marital-status-3" name="maritalstatus" type="radio" value="widowed">
+                    <input class="govuk-radios__input" id="marital-status-1" name="maritalstatus" type="radio" value="Married">
+                    <label class="govuk-label govuk-radios__label" for="marital-status-1">
+                      Married
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="marital-status-1" name="maritalstatus" type="radio" value="Married">
+                      <label class="govuk-label govuk-radios__label" for="marital-status-1">
+                        Never been married
+                      </label>
+                    </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="marital-status-2" name="maritalstatus" type="radio" value="Civil-partnership">
+                    <label class="govuk-label govuk-radios__label" for="marital-status-2">
+                      In a civil partnership
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="marital-status-3" name="maritalstatus" type="radio" value="Widowed">
                     <label class="govuk-label govuk-radios__label" for="marital-status-3">
                       Widowed
                     </label>
                   </div>
-                 
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="marital-status-5" name="maritalstatus" type="radio" value="dissolved-civil">
+                    <input class="govuk-radios__input" id="marital-status-4" name="maritalstatus" type="radio" value="Divorced">
+                    <label class="govuk-label govuk-radios__label" for="marital-status-4">
+                      Divorced
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="marital-status-5" name="maritalstatus" type="radio" value="Dissolved-civil">
                     <label class="govuk-label govuk-radios__label" for="marital-status-5">
                       Dissolved civil partnership
                     </label>

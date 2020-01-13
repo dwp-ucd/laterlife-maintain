@@ -8,8 +8,8 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 {{ govukHeader({
-  serviceName: serviceName,
-  serviceUrl: "/"
+serviceName: serviceName,
+serviceUrl: "/"
 }) }}
 
 {% block headEnd %}
@@ -41,7 +41,7 @@ GOV.UK Prototype Kit
 
                 <div>
                   <h1 class="govuk-heading-xl">
-                      Rachel Smith<br>
+                    Rachel Smith<br>
                     <span class="govuk-caption-xl">QQ 12 34 56 X</span>
                     <span class="app-c-tag">Receiving State Pension</span>
                   </h1>
@@ -54,56 +54,84 @@ GOV.UK Prototype Kit
         </div>
       </main>
 
-  <a href="overview" class="govuk-back-link">Back</a>
+      <a href="overview" class="govuk-back-link">Back</a>
 
- <br><br>
-      
-        <h2 class="govuk-heading-l">Marital details</h2>
-        <h2 class="govuk-heading-m">Spouse details</h2>
-     
-        <table class="govuk-table">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header" style="width: 50%" >First name</th>
-                <td class="govuk-table__cell" style="width: 50%">David</td>
-                <td class="govuk-table__cell"></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Surname</th>
-                <td class="govuk-table__cell">Smith</td>
-                <td class="govuk-table__cell"></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Any previous names</th>
-                <td class="govuk-table__cell"></td>
-                <td class="govuk-table__cell"></td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Date of birth </th>
-                <td class="govuk-table__cell">19 April 1954 </td>
-                <td class="govuk-table__cell"></td>
-              </tr>         
-              <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Date of marriage</th>
-                  <td class="govuk-table__cell">17 July 1987</td>
-                  <td class="govuk-table__cell">  <span  class="verified-badge verified">
-                      <b>Verified</b>
-                    </span> </td>
-                </tr>       
-  
-            </tbody>
-          </table>
+      <br><br>
 
-          <a class="govuk-link" href="change-status" style="font-size: 19px">
+      <h2 class="govuk-heading-l">Marital details</h2>
+      <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Date of marriage has not been verified <br>
+            <a href="verify">
+              Verify date of marriage<span class="govuk-visually-hidden">Add payee</span>
+            </a>
+          </strong>
+        </div>
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Status</th>
+            <td class="govuk-table__cell" style="width: 35%" >Married</td>
+            <td class="govuk-table__cell" style="text-align: right"> <a class="govuk-link" href="change-status">Change</a></td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Date of marriage</th>
+            <td class="govuk-table__cell">17 September 1987</td>
+            <td class="govuk-table__cell" style="text-align: right">
+              <span class="verified-badge not-verified" style="text-align: right; margin-left: 37%"><b>Not verified</b></span> 
+            </td>
+           </tr>
+
+        </tbody>
+      </table>
+
+      <h2 class="govuk-heading-m">Spouse details</h2>
+
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <a class="govuk-link" href="change-status" style="font-size: 19px; margin-left: 90%">
+              Change
+            </a>
+            <th scope="row" class="govuk-table__header" style="width: 45%">First name</th>
+            <td class="govuk-table__cell" style="width: 50%">David</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Surname</th>
+            <td class="govuk-table__cell">Smith</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Other names</th>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Date of birth </th>
+            <td class="govuk-table__cell">19 April 1954 </td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      <!-- <a class="govuk-link" href="change-status" style="font-size: 19px">
                       Change marital status
-                    </a>
+                    </a>-->
 
-  </div>
-
-  
+    </div>
 
 
-</main>        </div>
+
+
+  </main>
+</div>
 </div>
 {% endblock %}
 
