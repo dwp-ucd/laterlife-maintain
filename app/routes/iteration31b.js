@@ -1,5 +1,4 @@
 const express = require('express');
-const express = require('express');
 const router = express.Router()
 
 router.use((req, res, next) => {
@@ -10,25 +9,17 @@ router.use((req, res, next) => {
   })
   ; 
 
-  router.post('/iteration31a/change-status', function(req, res) {
-    if ( req.body['maritalstatus'] === 'married' ) {
-      res.redirect('change-status-error');
-    } if ( req.body['maritalstatus'] === 'never-married' ) {
-      res.redirect('change-status-error');
-    } if ( req.body['maritalstatus'] === 'civil-partnership' ) {
-      res.redirect('change-status-error');
-    } if ( req.body['maritalstatus'] === 'widowed' ) {
+  router.post('/iteration31b/change-status', function(req, res) {
+    if ( req.body['maritalstatus'] === 'widowed' ) {
       res.redirect('widow-details');
-    } if ( req.body['maritalstatus'] === 'divorced' ) {
-      res.redirect('divorce-details');
-    } if ( req.body['maritalstatus'] === 'dissolved-civil' ) {
-      res.redirect('change-status-error');
+    } if ( req.body['maritalstatus'] === 'dissolve-civil' ) {
+      res.redirect('dissolve-details');
     } 
   });
 
-  router.post('/iteration31a/verify', function(req, res) {
+  router.post('/iteration31b/verify', function(req, res) {
     if ( req.body['verified-or-notverified'] === 'verified' ) {
-      res.redirect('spouse-detailsV');
+      res.redirect('CP-detailsV');
     } else {
       res.redirect('new-date');
     }

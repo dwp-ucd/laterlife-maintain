@@ -10,18 +10,10 @@ router.use((req, res, next) => {
   ; 
 
   router.post('/iteration31a/change-status', function(req, res) {
-    if ( req.body['maritalstatus'] === 'married' ) {
-      res.redirect('change-status-error');
-    } if ( req.body['maritalstatus'] === 'never-married' ) {
-      res.redirect('change-status-error');
-    } if ( req.body['maritalstatus'] === 'civil-partnership' ) {
-      res.redirect('change-status-error');
-    } if ( req.body['maritalstatus'] === 'widowed' ) {
+    if ( req.body['maritalstatus'] === 'widowed' ) {
       res.redirect('widow-details');
     } if ( req.body['maritalstatus'] === 'divorced' ) {
       res.redirect('divorce-details');
-    } if ( req.body['maritalstatus'] === 'dissolved-civil' ) {
-      res.redirect('change-status-error');
     } 
   });
 
