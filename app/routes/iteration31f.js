@@ -9,7 +9,7 @@ router.use((req, res, next) => {
   })
   ; 
 
-  router.post('/iteration31d/change-status', function(req, res) {
+  router.post('/iteration31f/change-status', function(req, res) {
     if ( req.body['maritalstatus'] === 'married' ) {
       res.redirect('marital-details');
     } if ( req.body['maritalstatus'] === 'civil-partnership' ) {
@@ -17,7 +17,7 @@ router.use((req, res, next) => {
     } 
   });
 
-  router.post('/iteration31d/verify', function(req, res) {
+  router.post('/iteration31f/verify', function(req, res) {
     if ( req.body['verified-or-notverified'] === 'verified' ) {
       res.redirect('CP-detailsV');
     } else {
