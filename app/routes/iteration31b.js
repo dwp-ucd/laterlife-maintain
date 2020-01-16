@@ -11,9 +11,9 @@ router.use((req, res, next) => {
 
   router.post('/iteration31b/change-status', function(req, res) {
     if ( req.body['maritalstatus'] === 'widowed' ) {
-      res.redirect('widow-details');
+      res.redirect('widow-date');
     } if ( req.body['maritalstatus'] === 'dissolve-civil' ) {
-      res.redirect('dissolve-details');
+      res.redirect('dissolve-date');
     } 
   });
 
