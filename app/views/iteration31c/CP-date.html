@@ -54,52 +54,16 @@ serviceUrl: "/"
         </div>
       </main>
 
-      <a href="widow-date" class="govuk-back-link">Back</a>
+      <a href="change-status" class="govuk-back-link">Back</a>
 
       <br><br>
-
-      <h2 class="govuk-heading-l">Are the late spouse's details correct?</h2>
-
-      <p style="color: red">Need to display spouse details here with y/n options</p>
+      <form method="post" action="CP-details">
+        
+        <h2 class="govuk-heading-l">What date did the citizen enter a civil partnership?</h2>
      
-      <div class="govuk-form-group">
-
-          <label class="govuk-label" for="firstname">
-            <b>Their first name</b>
-          </label>
-          <input class="govuk-input" id="firstname" name="firstname" type="text">
-
-        </br>
-      </br>
-
-      <label class="govuk-label" for="surname">
-        <b>Their surname</b>
-      </label>
-      <input class="govuk-input" id="surname" name="surname" type="text">
-
-    </br>
-  </br>
-
-  <label class="govuk-label" for="othernameOh ">
-    <b>Any previous names</b></br>
-    <span class="govuk-hint">
-      Include maiden name, former married names and changes of family name.
-    </span>
-  </label>
-  <input class="govuk-input" id="firstname" name="firstname" type="text">
-
-</br>
-</br>
-
-<p>
-  <a href="#" class="govuk-link">Add another name</a>
-  </p>
-
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s"> Their date of birth
-    </legend>
     <div class="govuk-date-input" id="expiry">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
@@ -129,44 +93,9 @@ serviceUrl: "/"
   </fieldset>
 </div>
 
-
-
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s"> Date of marriage
-    </legend>
-    <div class="govuk-date-input" id="expiry">
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="expiry-day">
-            Day
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-day" name="expiry-day" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="expiry-month">
-            Month
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-month" name="expiry-month" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="expiry-year">
-            Year
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="expiry-year" name="expiry-year" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-    </div>
-  </fieldset>
-</div>
-<br>
-<button type="submit" class="govuk-button">
-  Continue
-</button>
+<button class="govuk-button" data-module="govuk-button">
+    Save
+  </button>
 
 </div>
 
@@ -174,7 +103,7 @@ serviceUrl: "/"
 
 
     </div>
-
+  </form>
 
 
 
