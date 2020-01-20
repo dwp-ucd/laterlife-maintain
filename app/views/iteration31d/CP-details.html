@@ -54,10 +54,10 @@ serviceUrl: "/"
         </div>
       </main>
 
-      <a href="overview" class="govuk-back-link">Back</a>
+      <a href="CP-date" class="govuk-back-link">Back</a>
 
       <br><br>
-
+<form method="post" action="overview3">
       <h2 class="govuk-heading-l">Partner details</h2>
      
       <div class="govuk-form-group">
@@ -128,40 +128,12 @@ serviceUrl: "/"
 </div>
 
 
+<br><br>
+<button class="govuk-button" data-module="govuk-button">
+    Save
+  </button>
 
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="expiry-hint" role="group">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s"> Date of marriage
-    </legend>
-    <div class="govuk-date-input" id="expiry">
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="expiry-day">
-            Day
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-day" name="expiry-day" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="expiry-month">
-            Month
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="expiry-month" name="expiry-month" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="expiry-year">
-            Year
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="expiry-year" name="expiry-year" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-    </div>
-  </fieldset>
-</div>
-
+  </form>
 </div>
 
       </div>
