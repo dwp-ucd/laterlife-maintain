@@ -33,6 +33,10 @@ const iteration31c = require('./routes/iteration31c');
 const iteration31d = require('./routes/iteration31d');
 const iteration31e = require('./routes/iteration31e');
 const iteration31f = require('./routes/iteration31f');
+const iteration32a = require('./routes/iteration32a');
+const iteration32b = require('./routes/iteration32b');
+const iteration32c = require('./routes/iteration32c');
+
 
 
 
@@ -80,6 +84,12 @@ router.use(iteration31c);
 router.use(iteration31d);
 router.use(iteration31e);
 router.use(iteration31f);
+router.use(iteration32a);
+router.use(iteration32b);
+router.use(iteration32c);
+
+
+
 
 
 
