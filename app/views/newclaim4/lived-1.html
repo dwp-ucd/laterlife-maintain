@@ -25,16 +25,16 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="lived-worked2" class="govuk-back-link">Back</a>
+        <a href="lived-worked-tog" class="govuk-back-link">Back</a>
         <br> <br>
         <form method="post" action="lived-2">
 
           <h1 class="govuk-heading-xl">
-Where did you live outside the UK?   </h1>
+            Which countries did you live in?  </h1>
 
 <div class="govuk-form-group autocomplete-wrapper">
   <label class="govuk-label" for="location-autocomplete">
-    Select your country
+    <b>Country</b>
   </label>
   <select class="govuk-select" id="location-autocomplete" name="location-autocomplete">
     <option value="" disabled selected></option>
@@ -123,7 +123,7 @@ Where did you live outside the UK?   </h1>
     <option value="territory:FO">Faroe Islands</option>
     <option value="country:FJ">Fiji</option>
     <option value="country:FI">Finland</option>
-    <option value="country:FR" selected>France</option>
+    <option value="country:FR">France</option>
     <option value="territory:GF">French Guiana</option>
     <option value="territory:PF">French Polynesia</option>
     <option value="territory:TF">French Southern Territories</option>
@@ -317,20 +317,10 @@ Where did you live outside the UK?   </h1>
     <option value="country:ZW">Zimbabwe</option>
     <option value="territory:AX">Åland Islands</option>
   </select>
+  <br>
+  <a href="lived-2" class="govuk-body">Add another country</a>
 </div>
 
-
-
-<div class="govuk-form-group">
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">
-    <b>Country name</b>
-    </label>
-    <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-  </div>
-  <br>
-<a href="lived-2" class="govuk-body">Add another country</a>
-</div>   
 
       <button type="submit" class="govuk-button">
         Continue
