@@ -12,8 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav.html' %}
-
+{% include './_header-nav-unselected.html' %}
 {% block headEnd %}
 {% endblock %}
 
@@ -25,16 +24,26 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+        <div class="moj-banner moj-banner--success">
+
+          <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+            <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z" /></svg>
+
+          <div class="moj-banner__message">
+            <span class="moj-banner__assistive">Success</span>Verification complete - continue with claim</div>
+
+        </div>
         <a href="bank" class="govuk-back-link">Back</a>
 
-        <form method="post" action="bank">
+        <form method="post" action="sp-date">
 <br>
           <h1 class="govuk-heading-xl">
-              We will pay your State Pension into your account every 4 weeks
+              You will get your State Pension every 4 weeks
           </h1>
 
 <h2 class="govuk-heading-m">
-Are you happy to get your st</h2>
+Are you happy to be paid every 4 weeks?</h2>
 
   <div class="govuk-form-group">
     
