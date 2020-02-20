@@ -24,13 +24,25 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="sp-date" class="govuk-back-link">Back</a>
+        <a href="germany" class="govuk-back-link">Back</a>
         <br> <br>
-        <form method="post" action="lived-worked2">
-          <h1 class="govuk-heading-xl">Time abroad</h1>
-                    <h1 class="govuk-heading-m">
-Have you ever lived outside the UK?   </h1>
+        <form method="post" action="alternative2">
 
+          <h1 class="govuk-heading-xl">
+            Do you need us to contact you in any other format?</h1>
+            <span class="govuk-hint">
+               Other formats we offer:
+               <br><br>
+               <ul class="govuk-hint govuk-list govuk-list--bullet">
+                <li>Audio form</li>
+                <li>Audio CD, cassette or MP3</li>
+                <li>Braille</li>
+                <li>Large print</li>
+                <li>TexBox</li>
+                <li>TypeTalk</li>
+              </ul>
+            </span>
+<br>
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
    
@@ -53,33 +65,6 @@ Have you ever lived outside the UK?   </h1>
     </div>
   </fieldset>
 </div>   
-
-<h1 class="govuk-heading-m">
-  Have you ever worked outside the UK?   </h1>
-  
-  <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-     
-      <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
-          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-            Yes
-          </label>
-        </div>
-        
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-            No
-          </label>
-        </div>
-       
-      
-      </div>
-    </fieldset>
-  </div>   
-
 
       <button type="submit" class="govuk-button">
         Continue
