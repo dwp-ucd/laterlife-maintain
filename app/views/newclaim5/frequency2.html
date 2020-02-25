@@ -13,7 +13,6 @@ GOV.UK Prototype Kit
 }) }}
 -->
 {% include './_header-nav-unselected.html' %}
-
 {% block headEnd %}
 {% endblock %}
 
@@ -25,33 +24,34 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <a href="dob" class="govuk-back-link">Back</a>
 
-        <form method="post" action="address1">
+        <a href="frequency" class="govuk-back-link">Back</a>
+
+        <form method="post" action="contacted2">
 <br>
           <h1 class="govuk-heading-xl">
-              Can you confirm your address?
+             Do you want to be paid every week or every 2 weeks?
           </h1>
-<div class="govuk-inset-text"><p>7 Beechwood Drive<br>Hebburn<br>NE8 2AN</p></div>
 
-<h2 class="govuk-heading-m">
-  Is this correct? </h2>
+
 
   <div class="govuk-form-group">
     
-    <div class="govuk-radios govuk-radios--inline">
+    <div class="govuk-radios govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
         <label class="govuk-label govuk-radios__label" for="changed-name">
-          Yes
+          Every week
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
         <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          No
+          Every 2 weeks
         </label>
       </div>
+  
+   
     </div>
 
   </div>
