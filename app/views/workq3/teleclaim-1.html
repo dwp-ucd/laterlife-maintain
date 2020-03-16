@@ -12,31 +12,31 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './_header-nav-unselected.html' %}
+{% include './_header-nav-teleclaim.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
+{% include './_find-someone-teleclaim.html' %}
+
+
+<br><br><br><br><br>
 <div class="govuk-width-container">
-<br><br><br><br>
-{% include './_bar-ready.html' %}
-  <main class="govuk-main-wrapper">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-two-thirds">
 
+      <main id="content" role="main">
+        <div class="grid-row">
+         
 
-        <a href="#" button type="submit" class="govuk-button">
-          Continue
-        </button>
-        </a>
-      </div>
-
+            {% include './_bar-ready.html' %}
+           
+            <a href="#" button type="submit" class="govuk-button">
+              Continue</a>     
+            </main>
     </div>
 
-  </div>
-
-</main>
 </div>
+
 
 {% endblock %}
 
