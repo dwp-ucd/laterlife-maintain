@@ -120,24 +120,54 @@ GOV.UK Prototype Kit
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
+    <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
 
-    <div class="govuk-details__text">
-      <details class="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Contact tab
-          </span>
-        </summary>
-        <div class="app-most-recent">
-          {% include 'notes/iteration30.html' %}
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
+              style="font-size: 16pt;">
+              International address
+            </span>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
+            style="font-size: 14pt;">
+            stuff about International address
+          </div>
         </div>
-        <div class="app-most-recent">
-          {% include 'notes/iteration16.html' %}
+        <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-3">
+          <div class="app-most-recent">
+            {% include 'notes/iteration30.html' %}
+          </div>
         </div>
-      </details>
+      </div>
 
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
+              style="font-size: 16pt;">
+              Adding contact preferences
+            </span>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2"
+            style="font-size: 14pt;">
+            stuff about Adding contact preferences
+          </div>
+        </div>
+        <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-2">
+
+          <div class="app-most-recent">
+            {% include 'notes/iteration16.html' %}
+          </div>
+
+        </div>
+      </div>
      
-    </div>
+
 
 
     {% endblock %}
