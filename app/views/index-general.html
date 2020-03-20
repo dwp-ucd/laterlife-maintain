@@ -115,22 +115,46 @@ GOV.UK Prototype Kit
   <div class="govuk-grid-column-two-thirds">
 
 
-      <div class="govuk-details__text">
+    <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
+    
+  
 
-        <details class="govuk-details">
-          <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
+              style="font-size: 16pt;">
               General
             </span>
-          </summary>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2"
+            style="font-size: 14pt;">
+            Agent service for entering new claim from a paper form
+          </div>
+        </div>
+        <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
+          aria-labelledby="accordion-with-summary-sections-heading-2">
+
           <div class="app-most-recent">
             {% include 'notes/iteration2b.html' %}
           </div>
           <div class="app-most-recent">
+            {% include 'notes/bpviteration2.html' %}
+          </div>
+          <div class="app-most-recent">
+            {% include 'notes/iteration2.html' %}
+          </div>
+          <div class="app-most-recent">
             {% include 'notes/general.html' %}
           </div>
-        </details>
+        </div>
+      </div>
 
+</div>
+
+
+    
       
      
 
