@@ -49,7 +49,7 @@ GOV.UK Prototype Kit
              
             </a>
           </li>
-          <li class="govuk-header__navigation-item govuk-header__navigation-item">
+          <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
             <a class="govuk-header__link" href="index-newclaims">
               New claims
             </a>
@@ -90,60 +90,72 @@ GOV.UK Prototype Kit
 
 
     
-
-
-   
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
     
-
-    <details class="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            <b>Telephone claims</b>
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-         
-          <div class="app-most-recent">
-            {% include 'notes/newclaim5.html' %}
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3"
+                  style="font-size: 16pt;">
+                  Telephone 
+                </span>
+              </h2>
+              <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3"
+                style="font-size: 14pt;">
+               Agent service for taking a new claim over the telephone
+              </div>
+            </div>
+            <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content"
+              aria-labelledby="accordion-with-summary-sections-heading-3">
+              <div class="app-most-recent">
+                {% include 'notes/newclaim5.html' %}
+              </div>
+    
+              <div class="app-most-recent">
+                  {% include 'notes/newclaim4.html' %}
+                </div>
+      
+           <div class="app-most-recent">
+                {% include 'notes/newclaim3.html' %}
+              </div>
+      
+              <div class="app-most-recent">
+                {% include 'notes/newclaim2.html' %}
+              </div>
+      
+              <div class="app-most-recent">
+                {% include 'notes/newclaim.html' %}
+              </div>
+            </div>
           </div>
-
- <div class="app-most-recent">
-    {% include 'notes/newclaim4.html' %}
-  </div>
-  
-       <div class="app-most-recent">
-            {% include 'notes/newclaim3.html' %}
+    
+    
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2"
+                  style="font-size: 16pt;">
+                  Paper - BR1 form
+                </span>
+              </h2>
+              <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2"
+                style="font-size: 14pt;">
+                Agent service for entering new claim from a paper form
+              </div>
+            </div>
+            <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content"
+              aria-labelledby="accordion-with-summary-sections-heading-2">
+    
+              <div class="app-most-recent">
+                {% include 'notes/paperclaims2.html' %}
+              </div>
+            <div class="app-most-recent">
+              {% include 'notes/paperclaims1.html' %}
+            </div>
+    
+            </div>
           </div>
-  
-          <div class="app-most-recent">
-            {% include 'notes/newclaim2.html' %}
-          </div>
-  
-          <div class="app-most-recent">
-            {% include 'notes/newclaim.html' %}
-          </div>
-          
-        </div>
-      </details>
-
-       
-    <details class="govuk-details">
-      <summary class="govuk-details__summary">
-        <span class="govuk-details__summary-text">
-          <b>Paper claims</b>
-        </span>
-      </summary>
-      <div class="govuk-details__text">
-        <div class="app-most-recent">
-          {% include 'notes/paperclaims2.html' %}
-        </div>
-      <div class="app-most-recent">
-        {% include 'notes/paperclaims1.html' %}
-      </div>
-
-
-    </details>
- 
+    
   </div>
 
 
