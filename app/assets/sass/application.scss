@@ -78,4 +78,10 @@ $govuk-assets-path: '/govuk/assets/';
   .govuk-section-break-id-bar {
     border-bottom: 1px solid govuk-colour("mid-grey");
   }
+
+  * {
+    font-family: Arial, sans-serif !important;
+  }
+
+
   // —————————————————————————————————————
