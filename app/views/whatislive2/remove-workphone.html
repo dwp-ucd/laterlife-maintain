@@ -30,21 +30,35 @@ GOV.UK Prototype Kit
           <br><br>
           {% include './_bar.html' %}
 
-<form method="post" action="contact-workphone">
+<form method="post" action="contact-workphone-r">
 
-          <a href="contact" class="govuk-back-link">Back</a>
+          <a href="change-workphone" class="govuk-back-link">Back</a>
           <br><br>
-          <h2 class="govuk-heading-l">Work phone number</h2>
+          <h2 class="govuk-heading-l">Do you want to remove this number?</h2>
 
           <div class="govuk-form-group">
             
-            <input class="govuk-input govuk-input--width-20" id="full-name" name="full-name" type="text" autocomplete="name" spellcheck="false">
+            <div class="govuk-inset-text">
+              0191 2779090
+             </div>
+             <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  No
+                </label>
+              </div>
+            </div>
+
           </div>
 
           <button type="submit" class="govuk-button">Save</button>
-<br>
-          <a href="remove-workphone" class="govuk-body">Remove work phone number</a>
-
         </div>
       </div>
     </main>
