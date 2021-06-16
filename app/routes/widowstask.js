@@ -1,6 +1,11 @@
 const express = require('express');
 const router = express.Router()
 
+router.post('/widowstask/tasks-1', (req, res) => {
+  res.redirect('/widowstask/widows-task-1')
+})
+  ;
+
 router.post('/widowstask/widows-task-1', function(req, res) {
     if ( req.body['claiming-sp'] === 'no' ) {
       res.redirect('/widowstask/entitlement');
