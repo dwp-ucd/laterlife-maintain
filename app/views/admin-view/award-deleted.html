@@ -20,9 +20,15 @@ GOV.UK Prototype Kit
 
   <div class="govuk-grid-column-full">
 
-    {% include './_bar-small-admin.html' %}
+    <div class="govuk-button-group">
 
+      <a href="admin4-cases" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      All cases
+      </a>
 
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
       
   </div>
 
@@ -34,12 +40,27 @@ GOV.UK Prototype Kit
 
 
           <br><br>
-          {% include './_bar.html' %}
+          {% include './_bar-deleted.html' %}
 
-          {% include './_tab-award.html' %}
+          <nav class="navigation-secondary">
+            <ul>
+                          
+              <li>
+                  <a href="personal-deleted">Personal</a>
+                </li>
+              <li>
+                <a href="contact-deleted">Contact</a>
+              </li>
+            
+              <li>
+                <a href="award-deleted" class="active" aria-current="page">Award</a>
+              </li>
+                <li>
+                  <a href="payment-deleted" >Payment</a>
+                </li>
 
-
-
+              </ul>
+            </nav>
 
         </div>
       </div>
@@ -53,9 +74,7 @@ GOV.UK Prototype Kit
 
         <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">State Pension awards</h2>
 
-        <a href="review-award" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 80%">Review award</span>
-        </a>
-
+        
           <br>
           <br>
 
@@ -63,24 +82,15 @@ GOV.UK Prototype Kit
 
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th class="govuk-table__header" scope="col" style="width: 25%">Date of change</th>
-            <th class="govuk-table__header" scope="col" style="width: 25%">From</th>
-            <th class="govuk-table__header " scope="col" style="width: 20%">Weekly amount</th>
-            <th class="govuk-table__header" scope="col" style="width: 20%"></th>
+            <th class="govuk-table__header" scope="col" style="width: 30%">From</th>
+            <th class="govuk-table__header " scope="col" style="width: 30%">Weekly amount</th>
+            <th class="govuk-table__header" scope="col" style="width: 30%"></th>
             <th class="govuk-table__header" scope="col" style="width: 10%"></th>
 
           </tr>
         </thead>
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell">10 June 2019</td>
-            <td class="govuk-table__cell">10 March 2019</td>
-            <td class="govuk-table__cell">£160.34</td>
-            <td class="govuk-table__cell"><a href="award-current">Details</a></td>
-            <td class="govuk-table__cell">In payment</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">10 April 2019</td>
             <td class="govuk-table__cell">10 April 2019</td>
             <td class="govuk-table__cell">£160.34</td>
             <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
@@ -88,8 +98,7 @@ GOV.UK Prototype Kit
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">10 April 2019</td>
-            <td class="govuk-table__cell">10 April 2019</td>
-            <td class="govuk-table__cell">£15.27</td>
+            <td class="govuk-table__cell">£150.27</td>
             <td class="govuk-table__cell"><a href="award-previous">Details</a></td>
             <td class="govuk-table__cell"></td>
           </tr>
@@ -114,7 +123,7 @@ GOV.UK Prototype Kit
 
       <li class="app-timeline__entry">
           <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-            No changes made
+            State Pension stopped
           </h3>
         </li>
 
