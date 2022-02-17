@@ -12,7 +12,7 @@ GOV.UK Prototype Kit
   serviceUrl: "/"
 }) }}
 -->
-{% include './header/_header-nav-enquiries.html' %}
+{% include './_header-nav-enquiries.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -24,39 +24,38 @@ GOV.UK Prototype Kit
 
     <main id="content" role="main">
       <div class="grid-row">
-        <dv class="column-full">
+        <div class="column-full">
 
 
           <br><br>
           {% include './_bar.html' %}
 
-<form method="post" action="award-reviewed">
 
-  {{ govukBackLink({
-    text: "Back",
-    href: "javascript:history.go(-1)"
-                    }) }}
+          <a href="spouse-details" class="govuk-back-link">Back</a>
+          <br><br>
+          <h2 class="govuk-heading-l">Spouse's other names</h2>
 
-          <br>
-          <br>
-
-          <h2 class="govuk-heading-l">Change to award</h2>
-
-          <p class="govuk-body">
-            The weekly State Pension will go down from <b>£132.66</b> to <b>£112.66</b> from <b>8 September 2020.</b><br>
-            <br>
-            A new award letter will be sent to the claimant.
-          </p>
-
+         
+          <form method="post">
+            <div class="govuk-form-group">
+              <span id="passport-issued-hint" class="govuk-hint">
+                Include middle names, maiden name, former married names and changes of family name.
+              </span>
+      
+              <div class="govuk-form-group">
+                <input class="govuk-input" id="event-name" name="event-name" type="text">
+              </div>
+            </div>
+  
             <button type="submit" class="govuk-button">
-            Confirm
+              Save
             </button>
-
-
+          </form>
         </div>
       </div>
+    </main>
 
-
+  </form>
 </div>
 </div>
 

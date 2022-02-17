@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './header/_header-nav-tasks.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -20,17 +20,24 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
       <br>
-        <h1 class="govuk-heading-xl">Get a task</h1>
+        <h1 class="govuk-heading-xl">Consider the State Pension entitlement of a widowed claimant
+        </h1>
+        <p>Check the record of the claimant's late spouse or civil partner to see if this changes their State Pension entitlement.
+        </p>
 
+        <form method="post"">
 
-        <form method="post">
-
-          <p>View the next available task that requires an action.</p>
 <br>
-          <a href="#" button type="submit" class="govuk-button">
-            View next task
-          </button>
+          <a href="widows-task-1" button class="govuk-button" data-module="govuk-button">
+            Start this task
+          </a>
+
+
+
+     <a href="personal" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
+          Return task to queue
         </a>
+
         </form>
 
 
