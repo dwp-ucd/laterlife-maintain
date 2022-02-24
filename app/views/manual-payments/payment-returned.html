@@ -83,7 +83,7 @@ GOV.UK Prototype Kit
           <td class="govuk-table__cell"></td>
         </tr>
         {% else %}
-        
+
         {% endif %}
 
 
@@ -133,21 +133,36 @@ GOV.UK Prototype Kit
     <h2 class="govuk-heading-m">
       Payment changes
     </h2>
+
+    {% if data['name-on-the-account'] %}
     <ol class="app-timeline">
       <li class="app-timeline__entry">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-          Becky figuring out what currently goes in here
+        Banking details changed
+        </h3>
+        <p class="app-timeline__info govuk-!-margin-bottom-0">
+          <span class="govuk-visually-hidden">No changes made</span>
+          <span class="app-timeline__date">
+           28 February 2022
+          </span>
+        </p>
+      </li>
+
+    {% else %}
+    {% endif %}
+
+      <li class="app-timeline__entry">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
+          Payment returned - payments stopped
         </h3>
 
         <p class="app-timeline__info govuk-!-margin-bottom-0">
           <span class="govuk-visually-hidden">No changes made</span>
           <span class="app-timeline__date">
-
+          27 January 2022
           </span>
         </p>
       </li>
-
-
     </ol>
 
   </div>
