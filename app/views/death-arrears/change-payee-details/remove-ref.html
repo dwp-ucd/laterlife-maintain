@@ -38,21 +38,35 @@ GOV.UK Prototype Kit
     }) 
   }}
         <br><br>
-        <form action="dap-number" method="post" class="form">
-          <h1 class="govuk-heading-l">Full name of the person dealing with Mark's estate</h1>
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
+        <form method="post" class="form">
+          <h2 class="govuk-heading-l">Are you sure you want to remove this reference number?</h2>
+<p>
+  SS-MROO<br>
+   
+
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="remove-address" name="remove-address" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="remove-address">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="remove-address-2" name="remove-address" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="remove-address">
+                No
+              </label>
+            </div>
           </div>
+        </fieldset>
+      </div><br>                
 
           <button type="submit" class="govuk-button">
             Continue
           </button>
-
-          
-
         </form>
 
       </div>
@@ -66,6 +80,14 @@ GOV.UK Prototype Kit
 </main>
 </div>
 </div>
+
+<script>
+    nextPageRoutes = {
+        'yes': 'send-letter-corporate-dap-none',
+        'no': 'send-letter-corporate-dap',
+        }
+</script>
+
 {% endblock %}
 
 {% block content %}
