@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav-unselected.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+              {% include './_bar.html' %}
+
+        <form method="post" action="get-a-task-complete">
+
+
+          <h1 class="govuk-heading-l">Failed! oh.</h1>
+
+          <h2 class="govuk-heading-m">What happens next</h2>
+
+                 <p class="govuk-body">
+                   We’ve sent your application to Hackney Electoral Register Office.
+                 </p>
+                 <p class="govuk-body">
+                   They will contact you either to confirm your registration, or to ask for more information.
+                 </p>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continueeeeee
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+      {% endblock %}
+
+      {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        </div>
+      </div>
+
+      {% endblock %}
