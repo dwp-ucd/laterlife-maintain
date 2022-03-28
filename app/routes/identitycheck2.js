@@ -31,7 +31,7 @@ router.post('/identity-check-task-2/security-check-task-record', function(req, r
   if ( req.body['security-questions'] === 'passed' ) {
     res.redirect('passed-2');
   } else if ( req.body['security-questions'] === 'failed' ) {
-    res.redirect('first-fail-2');
+    res.redirect('second-fail');
   } else {
     res.redirect('refused-2');
   }
