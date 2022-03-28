@@ -26,6 +26,18 @@ router.post('/identity-check-task-2/security-check-task', function(req, res) {
 });
 
 
+router.post('/identity-check-task-2/security-check-task-2', function(req, res) {
+  if ( req.body['security-questions'] === 'passed' ) {
+    res.redirect('');
+  } else if ( req.body['security-questions'] === '' ) {
+    res.redirect('first-fail');
+  } else if ( req.body['security-questions'] === 'refused' ) {
+    res.redirect('');
+  } else {
+    res.redirect('no-answer-2');
+  }
+});
+
 //
 router.post('/identity-check-task-2/security-check-task-record', function(req, res) {
   if ( req.body['security-questions'] === 'passed' ) {
