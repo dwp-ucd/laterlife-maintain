@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+
+{% include './_header-nav.html' %}
+
+{% block headEnd %}
+{% endblock %}
+
+<div class="govuk-width-container">
+
+  {% include './_bar-small.html' %}
+
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form method="post">
+
+
+          <span class="govuk-heading-xl">You cannot go back to the 
+            credit record questions
+            <br></span>
+
+            <p></p>
+
+
+<p>You can still:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>check and change the claimant's personal details</li>
+  <li>submit their claim for State Pension</li>
+</ul>
+
+      <button type="submit" class="govuk-button">
+        Continue with their claim
+      </button>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+  </div>
+
+  <div class="column-one-third">
+  </div>
+
+
+
+</div>
+
+</main>
+</div>
+
+{% endblock %}
