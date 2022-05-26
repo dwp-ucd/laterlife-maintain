@@ -22,10 +22,14 @@ GOV.UK Prototype Kit
 
               {% include './_bar.html' %}
 
-                      <form method="post" action="">
+                      <form method="post" action="award-updated">
 
                         <h1 class="govuk-heading-l">Confirm details of debt</h1>
 
+                        {{ govukBackLink({
+                    text: "Back",
+                    href: "javascript:history.go(-1)"
+                    }) }}
 
                         <table class="govuk-table">
                           <thead class="govuk-table__head">
