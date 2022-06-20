@@ -228,8 +228,8 @@ GOV.UK Prototype Kit
         </legend>
       <br>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="inheritable-amounts-6" name="inheritable-amounts" type="radio" value="abroad">
-        <label class="govuk-label govuk-radios__label" for="inheritable-amounts-6">
+        <input class="govuk-radios__input" id="inheritable-amounts" name="inheritable-amounts" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="inheritable-amounts">
     Yes </label>
     </div>
 
@@ -247,14 +247,6 @@ GOV.UK Prototype Kit
           </div>
 
     <br><br>
-
-            <div class="govuk-button-group">
-          <a href="inheritable-amounts" button type="submit" class="govuk-button">
-            Continue
-          </a>
-        </div>
-
-  <a href="get-a-task-2" class="govuk-link govuk-link--no-visited-state">Save and return to queue</a>
 
     </div>
 
@@ -284,20 +276,24 @@ GOV.UK Prototype Kit
     Nothing to inherit</label>
     </div>
 
+    <div class="govuk-radios__divider">or</div>
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="save-return">
+      <label class="govuk-label govuk-radios__label" for="decision">
+    Save and return</label>
+    </div>
+
     <br><br>
-
-            <div class="govuk-button-group">
-              <button class="govuk-button" data-module="govuk-button">
-                Continue
-              </button>
-        </div>
-
-        <a href="get-a-task-2" class="govuk-link govuk-link--no-visited-state">Save and return to queue</a>
 
       </div>
     {% endif %}
 
-
+    <div class="govuk-button-group">
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </div>
 
 </div>
 
