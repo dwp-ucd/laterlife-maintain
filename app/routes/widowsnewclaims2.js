@@ -40,10 +40,8 @@ router.post('/widows/iteration-2/check-details-info-missing', function(req, res)
       res.redirect('/widows/iteration-3/get-a-task-2');
     } else if ( req.body['decision'] === 'nothing-to-inherit' ) {
     res.redirect('/widows/iteration-2/nothing-to-inherit');
-    } else if ( req.body['inheritable-amounts'] === 'yes' ) {
+  } else if ( req.body['decision'] === 'inheritable-amounts' ) {
       res.redirect('/widows/iteration-2/inheritable-amounts');
-    } else if  ( req.body['inheritable-amounts'] === 'no' ) {
-      res.redirect('/widows/iteration-2/nothing-to-inherit');
     } else {
     res.redirect('/widows/iteration-2/get-a-task-2');
   }
