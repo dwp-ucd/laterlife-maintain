@@ -131,8 +131,8 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                      <th scope="row" class="govuk-table__header" style="width: 40%">National Insurance number</th>
                      <td class="govuk-table__cell" style="width: 30%">
-                       {% if data.nationalinsurancenumber3 %}
-                       {{data.nationalinsurancenumber3}}
+                       {% if data.nationalinsurancenumber %}
+                       {{data.nationalinsurancenumber}}
                        {% else %}
                        JS 12 34 56 D
                        {% endif %}</td>
@@ -144,15 +144,15 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Gender</th>
                       <td class="govuk-table__cell">
-                        {% if data.gender2 %}
-                        {{data.gender2}}
+                        {% if data.gender %}
+                        {{data.gender}}
                         {% else %}
 
                         {% endif %}</td>
                       <td class="govuk-table__cell"> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="gender">
-                                              {% if data.gender2 %}
+                                              {% if data.gender %}
                                               Change
                                               {% else %}
                                               Add

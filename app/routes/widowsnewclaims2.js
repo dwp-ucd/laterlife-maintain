@@ -12,6 +12,16 @@ router.post('/widows/iteration-2/dom', (req, res) => {
 })
 ;
 
+router.post('/widows/iteration-2/gender', (req, res) => {
+  res.redirect('/widows/iteration-2/check-details-info-missing')
+})
+;
+
+router.post('/widows/iteration-2/dod', (req, res) => {
+  res.redirect('/widows/iteration-2/check-details-info-missing')
+})
+;
+
 router.post('/widows/iteration-2/check-details-info-missing', function(req, res) {
     if ( req.body['decision'] === 'more-info' ) {
       res.redirect('/widows/iteration-2/more-info-letter');
@@ -46,6 +56,8 @@ router.post('/widows/iteration-2/check-details-info-missing', function(req, res)
     res.redirect('/widows/iteration-2/get-a-task-2')
   })
   ;
+
+
 
   router.post('/widows/iteration-2/spouse-spa', function(req, res) {
       if ( req.body['receiving-sp'] === 'yes' ) {
