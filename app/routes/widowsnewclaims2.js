@@ -7,10 +7,21 @@ router.post('/widows/iteration-2/task-details', (req, res) => {
 })
 ;
 
+router.post('/widows/iteration-2/nino', (req, res) => {
+  res.redirect('/widows/iteration-2/check-details-info-missing')
+})
+;
+
 router.post('/widows/iteration-2/dom', (req, res) => {
   res.redirect('/widows/iteration-2/check-details-info-missing')
 })
 ;
+
+router.post('/widows/iteration-2/dob', (req, res) => {
+  res.redirect('/widows/iteration-2/check-details-info-missing')
+})
+;
+
 
 router.post('/widows/iteration-2/gender', (req, res) => {
   res.redirect('/widows/iteration-2/check-details-info-missing')
