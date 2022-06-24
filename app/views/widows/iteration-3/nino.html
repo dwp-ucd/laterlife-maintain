@@ -7,47 +7,47 @@ GOV.UK Prototype Kit
 {% block header %}
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
-
 {% include 'includes/_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
 
 
-
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+        {% include 'widows/iteration-3/_bar.html' %}
 
-      {% include 'widows/iteration-2/_bar-widows.html' %}
+  {{ govukBackLink({
+        "text": "Back",
+        "href": "javascript: window.history.go(-1)"
+      })
+    }}
 
-{{ govukBackLink({
-      "text": "Back",
-      "href": "javascript: window.history.go(-1)"
-    })
-  }}
-
-  <br><br>
-  <form method="post">
+        <br>
+        <form method="post">
 
       <div class="govuk-form-group">
-          <h1 class="govuk-heading-l">More information needed</h1>
-          <br>
-<p>Send a letter to the claimaint asking them to send in their:</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li>certificate of marriage or civil partnership</li>
-  <!--  <li>spouse's birth certificate</li>
-      <li>spouse's death certificate</li>
-        <li>spouse's National Insurance number</li> --></ul>
-        <p>A new task will be created to check for information again in 2 weeks.</p>
+          <h1 class="govuk-heading-l">Lilly Bennett's National Insurance number</h1>
 
+          <div class="govuk-form-group">
+    <label class="govuk-label" for="nationalinsurancenumber">
+      National Insurance number
+    </label>
+    <input class="govuk-input govuk-input--width-10" id="nationalinsurancenumber3" name="nationalinsurancenumber" type="text" spellcheck="false" aria-describedby="national-insurance-number-hint">
+  </div>
+      </div>
 
       <br>
 
+
       <button class="govuk-button" data-module="govuk-button">
-        Confirm letter sent
+        Continue
       </button>
+
+        </form>
+
 
 
       </div>
