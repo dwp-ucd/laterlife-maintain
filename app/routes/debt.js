@@ -9,7 +9,7 @@ router.use((req, res, next) => {
 })
 
 
-// DAP details yes/no
+
 router.post('/debt/debt-start-date', function(req, res) {
   if ( req.body['debtstartdate'] === 'manual-date' ) {
     res.redirect('debt-start-date-manual');
@@ -17,6 +17,17 @@ router.post('/debt/debt-start-date', function(req, res) {
     res.redirect('debt-details');
   }
 });
+
+router.post('/debt/debt-edit', function(req, res) {
+  if ( req.body['edit-remove-debt'] === 'remove' ) {
+    res.redirect('remove-confirmation');
+  } else {
+    res.redirect('debt-start-date-manual');
+  }
+});
+
+
+
 
 //
 router.post('/', (req, res) => {

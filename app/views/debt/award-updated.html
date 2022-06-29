@@ -67,9 +67,9 @@ GOV.UK Prototype Kit
               {% else %}£50.66
               {% endif %}
               will be applied to the current award from {% if data.debtstartdate %}
-              {{data.dedday}}/{{data.dedmonth}}/{{data.dedyear}}
+              {{data.debtstartdate}}
               {% else %}
-              19 March 2023
+              {{data.dedday}}/{{data.dedmonth}}/{{data.dedyear}}
               {% endif %}.
               <a class="govuk-notification-banner__link" href="debt-edit">Edit debt payment details</a>.
             </p>
