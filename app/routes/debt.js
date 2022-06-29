@@ -28,6 +28,24 @@ router.post('/debt/debt-edit', function(req, res) {
 
 
 
+router.post('/debt/debt-end-date', (req, res) => {
+  res.redirect('/debt/confirm-debt')
+})
+;
+
+router.post('/debt/confirm-debt', function(req, res) {
+  if ( req.session.data['edit-remove-debt'] === 'edit' ) {
+    res.redirect('award-debt-edited');
+  } else {
+    res.redirect('award-updated');
+  }
+});
+
+
+
+
+
+
 
 //
 router.post('/', (req, res) => {
