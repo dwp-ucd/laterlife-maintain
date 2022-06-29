@@ -26,6 +26,11 @@ router.post('/debt/debt-edit', function(req, res) {
   }
 });
 
+router.post('/debt/apply-debt', (req, res) => {
+  res.redirect('/debt/confirm-debt')
+})
+;
+
 router.post('/debt/debt-start-date-manual', (req, res) => {
   res.redirect('/debt/debt-details')
 })
