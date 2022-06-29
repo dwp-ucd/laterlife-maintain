@@ -26,6 +26,15 @@ router.post('/debt/debt-edit', function(req, res) {
   }
 });
 
+router.post('/debt/debt-start-date-manual', (req, res) => {
+  res.redirect('/debt/debt-details')
+})
+;
+
+router.post('/debt/debt-details', (req, res) => {
+  res.redirect('/debt/debt-end-date')
+})
+;
 
 
 router.post('/debt/debt-end-date', (req, res) => {
