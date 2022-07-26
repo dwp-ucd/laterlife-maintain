@@ -73,6 +73,9 @@ GOV.UK Prototype Kit
                             </legend>
 
                             <div class="govuk-date-input" id="passport-issued">
+                              <div id="currency-hint" class="govuk-hint">
+                                The balancing deduction will be applied on this date, if there is one
+                              </div>
                               <div class="govuk-date-input__item">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
@@ -142,6 +145,36 @@ GOV.UK Prototype Kit
 </button>
 
 
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /debt-recovery-details <br>
+        <b>Error messages:</b>
+        
+        <br>No start date: Enter a date for the start of debt recovery
+        <br>Invalid start date: Enter a real date, like 7 10 2022
+        <br>Start date too soon or in the past: Enter a date that is at least 2 weeks in the future
+        <br>No end date: Enter a date for the end of debt recovery
+        <br>Invalid end date: Enter a real date, like 7 10 2022
+        <br>End date in the past: Enter a date that is in the future
+        <br>End date before start date: Enter a date that is after the start date for debt recovery
+        <br>No weekly amount: Enter a weekly amount to deduct
+        <br>Invalid amount: Enter a real weekly amount to deduct, like 123.45
+        <br>Invalid balancing deduction: Enter a real balancing deduction, like 123.45
+        <br>No deduction code: Enter a deduction code for the overpayment type
+        <br>Invalid deduction code: Deduction code must only contain numbers
+        <br><b>Notes:</b> None <br>
+      </div>
+    </details>
+
+  </div>
 
 
         </div>

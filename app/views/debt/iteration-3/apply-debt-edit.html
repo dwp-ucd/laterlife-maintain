@@ -45,21 +45,21 @@ GOV.UK Prototype Kit
                                   <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
                                     Day
                                   </label>
-                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric" value="12"></div>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric" value=""></div>
                               </div>
                               <div class="govuk-date-input__item">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
                                     Month
                                   </label>
-                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric" value="8"></div>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric" value=""></div>
                               </div>
                               <div class="govuk-date-input__item">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
                                     Year
                                   </label>
-                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric" value="2022"></div>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric" value=""></div>
                               </div>
                             </div>
 
@@ -73,26 +73,29 @@ GOV.UK Prototype Kit
                             </legend>
 
                             <div class="govuk-date-input" id="passport-issued">
+                              <div id="currency-hint" class="govuk-hint">
+                                The balancing deduction will be applied on this date, if there is one
+                              </div>
                               <div class="govuk-date-input__item">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
                                     Day
                                   </label>
-                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric" value="29"></div>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric" value=""></div>
                               </div>
                               <div class="govuk-date-input__item">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
                                     Month
                                   </label>
-                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric" value="3"></div>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric" value=""></div>
                               </div>
                               <div class="govuk-date-input__item">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
                                     Year
                                   </label>
-                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric" value="2022"></div>
+                                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric" value=""></div>
                               </div>
                             </div>
 
@@ -109,7 +112,7 @@ GOV.UK Prototype Kit
                           </div>
                           <div class="govuk-input__wrapper">
                             <div class="govuk-input__prefix" aria-hidden="true">£</div>
-                            <input class="govuk-input govuk-input--width-10" id="currency" name="currency" type="text" spellcheck="false" aria-describedby="currency-hint" value="50.66">
+                            <input class="govuk-input govuk-input--width-10" id="currency" name="currency" type="text" spellcheck="false" aria-describedby="currency-hint" value="">
                           </div>
                         </div>
 
@@ -122,7 +125,7 @@ GOV.UK Prototype Kit
                           </div>
                           <div class="govuk-input__wrapper">
                             <div class="govuk-input__prefix" aria-hidden="true">£</div>
-                            <input class="govuk-input govuk-input--width-10" id="remaining" name="remaining" type="text" spellcheck="false" aria-describedby="currency-hint" value="1.10">
+                            <input class="govuk-input govuk-input--width-10" id="remaining" name="remaining" type="text" spellcheck="false" aria-describedby="currency-hint" value="">
                           </div>
                         </div>
 
@@ -134,14 +137,43 @@ GOV.UK Prototype Kit
                           <div id="currency-hint" class="govuk-hint">
                             Enter the deduction code for the benefit with the highest amount outstanding
                           </div>
-                          <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text" value="01">
+                          <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text" value="">
                         </div>
 
 <button class="govuk-button" data-module="govuk-button">
  Continue
 </button>
 
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /edit-existing-debt-recovery-details <br>
+        <b>Error messages:</b>
+        
+        <br>No start date: Enter a date for the start of debt recovery
+        <br>Invalid start date: Enter a real date, like 7 10 2022
+        <br>Start date in the past: Enter a date that is in the future
+        <br>No end date: Enter a date for the end of debt recovery
+        <br>Invalid end date: Enter a real date, like 7 10 2022
+        <br>End date in the past: Enter a date that is in the future
+        <br>End date before start date: Enter a date that is after the start date for debt recovery
+        <br>No weekly amount: Enter a weekly amount to deduct
+        <br>Invalid amount: Enter a real weekly amount to deduct, like 123.45
+        <br>Invalid balancing deduction: Enter a real balancing deduction, like 123.45
+        <br>No deduction code: Enter a deduction code for the overpayment type
+        <br>Invalid deduction code: Deduction code must only contain numbers
+        <br><b>Notes:</b> None <br>
+      </div>
+    </details>
+
+  </div>
 
 
         </div>
