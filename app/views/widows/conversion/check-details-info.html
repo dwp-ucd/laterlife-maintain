@@ -29,10 +29,22 @@ GOV.UK Prototype Kit
 
     <br><br>
 
-    <h1 class="govuk-heading-l">Check the details and decide how to continue</h1>
 
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+    All information completed and dates verified.
+        </p>
+      </div>
+    </div>
 
-    <p>Complete the information and verify the dates, or choose another way to continue.</p>
+    <h1 class="govuk-heading-l">Check for inheritable amounts</h1>
+
 
   <br><br>
 
@@ -122,7 +134,7 @@ GOV.UK Prototype Kit
                         {% if data.gender %}
                         {{data.gender}}
                         {% else %}
-
+                        Female
                         {% endif %}</td>
                       <td class="govuk-table__cell"> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
@@ -130,7 +142,7 @@ GOV.UK Prototype Kit
                                               {% if data.gender %}
                                               Change
                                               {% else %}
-                                              Add
+                                            Change
                                               {% endif %}</a>
                       </td>
                     </tr>
@@ -182,20 +194,20 @@ GOV.UK Prototype Kit
                         {% if data.domd %}
                         {{data.domd}}/{{data.domm}}/{{data.domy}}
                         {% else %}
-
+                        18/01/1992
                         {% endif %}</td>
                       <td class="govuk-table__cell"><span class="verified-badge verified">
                         <b>{% if data.dom %}
                         {{data.dom}}
                         {% else %}
-
+                        Verified
                         {% endif %}</b>
                       </span> </td>
                       <td class="govuk-table__cell" style="text-align: right" style="width: 5%">
                                               <a class="govuk-link" href="dom">{% if data.domd %}
                                               Change
                                               {% else %}
-                                              Add
+                                              Change
                                               {% endif %}</a>
                       </td>
                     </tr>
@@ -216,6 +228,11 @@ GOV.UK Prototype Kit
         </h2>
       </legend>
 
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
+        <label class="govuk-label govuk-radios__label" for="decision">
+          Enter inheritable amounts</label>
+      </div>
 
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="decision" name="decision" type="radio" value="nothing-to-inherit">
