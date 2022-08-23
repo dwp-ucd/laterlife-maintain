@@ -1,3 +1,4 @@
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -34,7 +35,7 @@ GOV.UK Prototype Kit
             <br><br>
             <div class="govuk-form-group">
 
-            <h1 class="govuk-heading-l">1. Open CPS Local and reissue this as a faster payment</h1>
+            <h1 class="govuk-heading-l">Open CPS Local and reissue this as a faster payment</h1>
 
 
                 <br>
@@ -46,18 +47,18 @@ GOV.UK Prototype Kit
                   <thead class="govuk-table__head">
                     <tr class="govuk-table__row">
                       <th scope="col" class="govuk-table__header">Total</th>
-                      <th scope="col" class="govuk-table__header">£650.72</th>
+                      <th scope="col" class="govuk-table__header">£456.08</th>
                     </tr>
                   </thead>
                   <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">New State Pension</th>
-                      <td class="govuk-table__cell">£650.72</td>
+                      <td class="govuk-table__cell">£658.72</td>
                     </tr>
-                    <!-- <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">Protected payment</th>
-                      <td class="govuk-table__cell">£0.00</td>
-                    </tr> -->
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Deduction amount</th>
+                      <td class="govuk-table__cell">£202.64</td>
+                    </tr>
                     <tr class="govuk-table__row">
                       <th scope="row" class="govuk-table__header">Period</th>
                       <td class="govuk-table__cell">27 Jan 2022 to 23 Feb 2022</td>
@@ -117,35 +118,19 @@ GOV.UK Prototype Kit
 </table>
 
 
-<br>
-            <h1 class="govuk-heading-l">2. Record nil pay adjustment in CPS Local</h1>
-
-
-
  <table class="govuk-table">
-                  <caption class="govuk-table__caption govuk-table__caption--m">Adjustment details</caption>
+                  <caption class="govuk-table__caption govuk-table__caption--m">Debt deduction details</caption>
 
                   <tbody class="govuk-table__body">
-             <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">Net amount</th>
-                      <td class="govuk-table__cell">£0.00</td>
+                  <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Deduction benefit</th>
+                      <td class="govuk-table__cell">State Pension (Contributory)</td>
                     </tr>
                     <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">New State Pension</th>
-                      <td class="govuk-table__cell">£210.00</td>
+                      <th scope="row" class="govuk-table__header">Source benefit code</th>
+                      <td class="govuk-table__cell">12345</td>
                     </tr>
-                    <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">Pension Credit</th>
-                      <td class="govuk-table__cell">-£210.00</td>
-                    </tr>
-                    <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">Start date</th>
-                      <td class="govuk-table__cell">27 Jan 2022</td>
-                    </tr>
-                    <tr class="govuk-table__row">
-                      <th scope="row" class="govuk-table__header">End date</th>
-                      <td class="govuk-table__cell">23 Feb 2022</td>
-                    </tr>
+
 
                   </tbody>
                 </table>
@@ -153,7 +138,7 @@ GOV.UK Prototype Kit
 <br>
 
                             <button class="govuk-button" data-module="govuk-button">
-                              Confirm payment reissued and NPA recorded
+                              Confirm payment reissued with debt deduction
                             </button>
             </div>
 
