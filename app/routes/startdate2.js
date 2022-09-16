@@ -61,14 +61,14 @@ router.post('/telephone-new-claim/start-date/ur/manual-address', (req, res) => {
 ;
 
 router.post('/telephone-new-claim/start-date/ur/bank', function(req, res) {
-  if ( req.body['sort-code'] === '823047' ) {
+  if ( req.body['sort-code'] === '763098' ) {
     res.redirect('/telephone-new-claim/start-date/ur/sp-date');
   }
   else if ( req.body['sort-code'] === '164392' ) {
       res.redirect('/telephone-new-claim/start-date/ur/sp-date-post-spa');
   }
-  else if ( req.body['sort-code'] === '763098' ) {
-        res.redirect('/telephone-new-claim/start-date/ur/sp-date-post-spa');
+  else if ( req.body['sort-code'] === '823047' ) {
+        res.redirect('/telephone-new-claim/start-date/ur/sp-date-post-spa2');
   } else {
     res.redirect('/telephone-new-claim/start-date/ur/sp-date');
   }
@@ -80,6 +80,16 @@ router.post('/telephone-new-claim/start-date/ur/sp-date-post-spa', (req, res) =>
 ;
 
 router.post('/telephone-new-claim/start-date/ur/claim-date-post-spa', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/ur/prison')
+})
+;
+
+router.post('/telephone-new-claim/start-date/ur/sp-date-post-spa2', (req, res) => {
+  res.redirect('/telephone-new-claim/start-date/ur/claim-date-post-spa2')
+})
+;
+
+router.post('/telephone-new-claim/start-date/ur/claim-date-post-spa2', (req, res) => {
   res.redirect('/telephone-new-claim/start-date/ur/prison')
 })
 ;
