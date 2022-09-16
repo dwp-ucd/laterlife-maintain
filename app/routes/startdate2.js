@@ -74,20 +74,27 @@ router.post('/telephone-new-claim/start-date/UR/bank', function(req, res) {
   }
 });
 
-router.post('/telephone-new-claim/start-date/UR/sp-date-post-spa', (req, res) => {
-  res.redirect('/telephone-new-claim/start-date/UR/claim-date-post-spa')
-})
-;
+router.post('/telephone-new-claim/start-date/UR/sp-date-post-spa', function(req, res) {
+  if ( req.body['sp-date'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/UR/prison');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/UR/claim-date-post-spa');
+  }
+});
 
 router.post('/telephone-new-claim/start-date/UR/claim-date-post-spa', (req, res) => {
   res.redirect('/telephone-new-claim/start-date/UR/prison')
 })
 ;
 
-router.post('/telephone-new-claim/start-date/UR/sp-date-post-spa2', (req, res) => {
-  res.redirect('/telephone-new-claim/start-date/UR/claim-date-post-spa2')
-})
-;
+router.post('/telephone-new-claim/start-date/UR/sp-date-post-spa2', function(req, res) {
+  if ( req.body['sp-date'] === 'yes' ) {
+    res.redirect('/telephone-new-claim/start-date/UR/prison');
+  } else {
+    res.redirect('/telephone-new-claim/start-date/UR/claim-date-post-spa2');
+  }
+});
+
 
 router.post('/telephone-new-claim/start-date/UR/claim-date-post-spa2', (req, res) => {
   res.redirect('/telephone-new-claim/start-date/UR/prison')
