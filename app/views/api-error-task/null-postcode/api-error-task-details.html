@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './navigation/_header-nav-unselected.html' %}
+{% include './_header-nav-unselected.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -20,19 +20,18 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Send RA forms
+        <h1 class="govuk-heading-xl">Fix a missing postcode issue
         </h1>
-<p>Use information from the citizen's claim to select the correct forms and post them to the claimant. The form templates are in the shared folder.</p>
-        <form method="post" action="task">
+        <p>Use the address information provided to correct the claimant's address information.</p>
+
+        <form method="post">
           <br>
-          <button class="govuk-button" data-module="govuk-button">
+          <a href="api-error-task-address" button class="govuk-button" data-module="govuk-button">
             Start this task
-          </button>
+          </a>
           <a href="get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
             Return task to queue
           </a>
-
-
 
         </div>
 
@@ -40,9 +39,6 @@ GOV.UK Prototype Kit
 
     </div>
 
-
-</main>
-      </div>
 
       {% endblock %}
 
