@@ -19,34 +19,35 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-
-        <h1 class="govuk-heading-xl">Fix an address issue
+        <br>
+        <h1 class="govuk-heading-xl">Review a State Pension award
         </h1>
-        <p>Use the address information provided to correct the claimant's address information.</p>
+        <p>HM Revenue and Customs (HMRC) has notified us of a change affecting a claimant's State Pension
+          award.<br><br>Review the new award and update it if required.</p>
 
-        <form method="post">
+        <form method="post" action="review-details">
           <br>
-          <a href="api-error-task-address" button class="govuk-button" data-module="govuk-button">
+          <button class="govuk-button" data-module="govuk-button">
             Start this task
-          </a>
+          </button>
           <a href="get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
             Return task to queue
           </a>
-
-        </div>
-
+        </form>
       </div>
-
     </div>
+</div>
+</div>
+</main>
+</div>
 
+{% endblock %}
 
-      {% endblock %}
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-      {% block content %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
+  </div>
+</div>
 
-        </div>
-      </div>
-
-      {% endblock %}
+{% endblock %}
