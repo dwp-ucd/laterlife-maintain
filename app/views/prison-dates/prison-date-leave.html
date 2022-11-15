@@ -8,13 +8,13 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include '../navigation/_header-nav.html' %}
+{% include './navigation/_header-nav.html' %}
 {% block headEnd %}
 {% endblock %}
 
 <div class="govuk-width-container">
 
-  {% include '../navigation/_bar-small.html' %}
+  {% include './navigation/_bar-small.html' %}
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
@@ -35,7 +35,7 @@ GOV.UK Prototype Kit
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                   </legend>
                   <h1 class="govuk-heading-xl"">
-                              What date did you leave prison?
+                    When did you leave prison?
                               </h1>
                   <div class="govuk-date-input" id="marriage-date">
                     <div class="govuk-date-input__item">
@@ -70,30 +70,31 @@ GOV.UK Prototype Kit
                 </fieldset>
               </div>
 
-              <!-- <fieldset class="govuk-fieldset" aria-describedby="marriage-verification-hint">
-                <div class="govuk-radios govuk-radios--inline">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="marriage-verification" name="marriage-verification" type="radio"
-                      value="verified">
-                    <label class="govuk-label govuk-radios__label" for="marriage-verification-1">
-                      Verified
-                    </label> </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="marriage-verification" name="marriage-verification" type="radio"
-                      value="not-verified">
-                    <label class="govuk-label govuk-radios__label" for="marriage-verification-2">
-                      Not verified
-                    </label> </div>
-                </div>
-              </fieldset> -->
       <br>
        <button class="govuk-button" data-module="govuk-button">
  Continue
 </button>
 
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
 
-      
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        <b>URL, errors and notes</b>
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <b>URL:</b> /prison-leave-date  <br>
+        <b>Error messages:</b> <br>
+        Nothing entered: Enter the date the claimant left prison<br>
+        Invalid: Enter a real date, like 12 4 1993<br>
+      If user puts in date before date went into prison: Date you left prison must be after 22 April 2022 [date went in +1]<br>
+        <b>Notes:</b> None <br>
+      </div>
+    </details>
+
+
 
     </div>
 
