@@ -23,18 +23,6 @@ GOV.UK Prototype Kit
           <div class="column-full">
 <br>
 
-
-
-
-
-<div class="govuk-grid-column-full">
-
-
-
-</div>
-
-
-
             {% include './name-bar/_bar-jose.html' %}
 
           </div>
@@ -53,46 +41,33 @@ GOV.UK Prototype Kit
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             </legend>
 
-            <h2 class="govuk-heading-l">Why are you stopping the claimant's <br>State Pension?</h2>
+            <h2 class="govuk-heading-l">What is the status of the imprisoned human?</h2>
 
           <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
 
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-1" name="stop-sp" type="radio" value="death">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant has died
+        <input class="govuk-radios__input" id="guilty-1" name="guilty" type="radio" value="guilty">
+        <label class="govuk-label govuk-radios__label" for="verdict">
+          Convicted
         </label>
       </div>
 
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-2" name="stop-sp" type="radio" value="deferral">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant has deferred their State Pension
-        </label>
-      </div>
-
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-3" name="stop-sp" type="radio" value="custody" data-aria-controls="conditional-prison">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-          Claimant is remanded in custody
+        <input class="govuk-radios__input" id="guilty-2" name="guilty" type="radio" value="innocent-until-proven-guilty">
+        <label class="govuk-label govuk-radios__label" for="verdict">
+          Innocent until proven guilty
         </label>
       </div>
 
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="stop-sp-4" name="stop-sp" type="radio" value="prison" data-aria-controls="conditional-prison">
-          <label class="govuk-label govuk-radios__label" for="stop-sp">
-            Claimant is in prison
+          <input class="govuk-radios__input" id="guilty-3" name="guilty" type="radio" value="guilt-unconfirmed">
+          <label class="govuk-label govuk-radios__label" for="guilty">
+          Unknown
           </label>
         </div>
 
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="stop-sp-5" name="stop-sp" type="radio" value="suspend" data-aria-controls="conditional-suspend">
-        <label class="govuk-label govuk-radios__label" for="stop-sp">
-        Temporary suspension pending investigation
-        </label>
-      </div>
 
   </fieldset>
 </div>
