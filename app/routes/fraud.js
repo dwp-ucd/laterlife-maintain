@@ -27,13 +27,10 @@ router.post('/fraud/attempted/iteration-1/fraud-details', (req, res) => {
 
 
 router.post('/fraud/attempted/iteration-1/record-fraud', (req, res) => {
-  res.redirect('/fraud/attempted/iteration-1/confirm-fraud')
-})
-;
-
-router.post('/fraud/attempted/iteration-1/confirm-fraud', (req, res) => {
   res.redirect('/fraud/attempted/iteration-1/personal-fraud')
 })
 ;
+
+
 
   module.exports = router;
