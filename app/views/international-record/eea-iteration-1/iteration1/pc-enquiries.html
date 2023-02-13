@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './navigation/_header-nav-unselected.html' %}
+{% include './header/_header-nav.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -19,19 +19,22 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+      <br>
 
-        <h1 class="govuk-heading-xl">Send CFN901 form
-        </h1>
-<p>Use information from the citizen's claim to add details to the CFN901 form and post it to the claimant.</p>
+        <h2 class="govuk-heading-xl">Find someone</h2>
+        <form method="post">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="nino">
+              National Insurance number
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="nino" name="nino" type="nino" aria-describedby="nino-hint">
+          </div>
 
-        <form method="post" action="cfn-task">
-          <br>
-          <button class="govuk-button" data-module="govuk-button">
-            Start this task
+          <a href="pc-find" button type="submit" class="govuk-button">
+            Find
           </button>
-          <a href="get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-            Return task to queue
-          </a>
+        </a>
+        </form>
 
 
 
@@ -40,6 +43,9 @@ GOV.UK Prototype Kit
       </div>
 
     </div>
+
+  </div>
+
 
 
 </main>

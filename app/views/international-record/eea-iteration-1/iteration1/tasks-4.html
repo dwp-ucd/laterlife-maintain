@@ -8,7 +8,7 @@ GOV.UK Prototype Kit
 {% include "includes/cookie-banner.html" %}
 {# Set serviceName in config.js. #}
 
-{% include './navigation/_header-nav-unselected.html' %}
+{% include './header/_header-nav-tasks.html' %}
 
 {% block headEnd %}
 {% endblock %}
@@ -19,19 +19,24 @@ GOV.UK Prototype Kit
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+      <br>
+      <form method="post">
+      <div>
+        <a href="tasks-3" class="govuk-back-link">Back</a>
 
-        <h1 class="govuk-heading-xl">Send CFN901 form
-        </h1>
-<p>Use information from the citizen's claim to add details to the CFN901 form and post it to the claimant.</p>
+      </div>
+      <br>
+        <h1 class="govuk-heading-xl">Complete task</h1>
 
-        <form method="post" action="cfn-task">
-          <br>
-          <button class="govuk-button" data-module="govuk-button">
-            Start this task
-          </button>
-          <a href="get-a-task" button type="submit" style="margin-left: 2%" class="govuk-button govuk-button--secondary">
-            Return task to queue
+        <p>If you have checked the spouse's record and completed
+          any necessary actions, you can end this task.</p>
+
+<br>
+          <a href="tasks" button type="submit" class="govuk-button">
+            End task
           </a>
+
+        </form>
 
 
 
@@ -41,6 +46,7 @@ GOV.UK Prototype Kit
 
     </div>
 
+  </div>
 
 </main>
       </div>
