@@ -55,11 +55,23 @@ GOV.UK Prototype Kit
                   <td class="govuk-table__cell"">Sent</td>
                   <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right"> </a></td>
                 </tr>
-                {% if data.mixedyearsspain%}
+              {% if data.mixedyearsspain %}
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Mixed years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsspain}}</td>
-                  <td class="govuk-table__cell"><a href="mixed-years-spain" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right"> Change </a></td>
+                  <td class="govuk-table__cell"><a href="mixed-years-spain" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
+                    {% if data.spaininsurance %}
+                                  {% else %}
+                                  Change
+                                  {% endif %} </a></td></tr>
+                {% else %}
+                {% endif %}
+
+                {% if data.spaininsurance %}
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Insurance record</th>
+                  <td class="govuk-table__cell">{{data.spaininsurance}}</td>
+                  <td class="govuk-table__cell"></td>
                 </tr>
                 {% else %}
                 {% endif %}
@@ -70,7 +82,7 @@ GOV.UK Prototype Kit
 
             <table class="govuk-table">
               <h2 class="govuk-heading-m" style="margin-bottom:-27px;float:left">Austria</h2>
-              {% if data.mixedyearsaustria%}
+              {% if data.mixedyearsaustria %}
               {% else %}
                   <a href="mixed-years-austria" <span class="govuk-link govuk-!-font-size-19" style="margin-left: 57%">Consider mixed years</span></a>
                 {% endif %}
@@ -96,11 +108,24 @@ GOV.UK Prototype Kit
                   <td class="govuk-table__cell">Sent</td>
                   <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right"></a></td>
                 </tr>
-                {% if data.mixedyearsaustria%}
+                {% if data.mixedyearsaustria %}
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Mixed years</th>
                   <td class="govuk-table__cell"style="width: 35%">{{data.mixedyearsaustria}}</td>
-                  <td class="govuk-table__cell"><a href="mixed-years-austria" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right"> Change </a></td>
+                  <td class="govuk-table__cell"><a href="mixed-years-austria" class="govuk-link govuk-link--no-visited-state" style="margin-bottom:-27px;float:right">
+                    {% if data.spaininsurance %}
+                    {% else %}
+                    Change </a>{% endif %}</td>
+                </tr>
+                {% else %}
+                {% endif %}
+
+
+                {% if data.austriainsurance %}
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Insurance record</th>
+                  <td class="govuk-table__cell">{{data.austriainsurance}}</td>
+                  <td class="govuk-table__cell"></td>
                 </tr>
                 {% else %}
                 {% endif %}
