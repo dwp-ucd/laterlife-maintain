@@ -71,7 +71,7 @@ router.post('/international-task/testing/scenario-1/confirmation', (req, res) =>
 // Scenario two
 
 router.post('/international-task/testing/scenario-2/cfn-task', (req, res) => {
-  res.redirect('/international-task/testing/scenario-1/mixed-years')
+  res.redirect('/international-task/testing/scenario-2/mixed-years')
 })
 ;
 
